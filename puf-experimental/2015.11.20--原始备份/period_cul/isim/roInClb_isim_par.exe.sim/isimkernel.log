@@ -1,0 +1,30 @@
+Command line:
+   roInClb_isim_par.exe
+     -simmode  gui
+     -sdfmax  /roInClb/=netgen/par/roInClb_timesim.sdf
+     -sdfroot  /
+     -simrunnum  0
+     -socket  54509
+
+Thu Jul 09 04:40:31 2015
+
+
+ Elaboration Time: 0.046875 sec
+
+ Current Memory Usage: 509.759 Meg
+
+ Total Signals          : 264
+ Total Nets             : 172
+ Total Signal Drivers   : 101
+ Total Blocks           : 46
+ Total Primitive Blocks : 28
+ Total Processes        : 104
+ Total Traceable Variables  : 314
+ Total Scalar Nets and Variables : 6202
+
+ Total Simulation Time: 0.359375 sec
+
+ Current Memory Usage: 667.054 Meg
+
+Thu Jul 09 04:41:32 2015
+

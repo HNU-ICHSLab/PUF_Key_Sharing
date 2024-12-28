@@ -1,0 +1,166 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
+-n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf
+-ucf topDesign.ucf
+
+Design file:              topDesign.ncd
+Physical constraint file: topDesign.pcf
+Device,package,speed:     xc7z020,clg484,C,-1 (PRODUCTION 1.08 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock sysClock
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+sysRst      |    8.780(R)|      SLOW  |   -3.419(R)|      FAST  |clk_to_driver     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sysConf0
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+sysRst      |   -1.068(R)|      FAST  |    8.641(R)|      SLOW  |ro_to_counter     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sysConf1
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+sysRst      |   -0.968(R)|      FAST  |    6.633(R)|      SLOW  |ro_to_counter     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Clock sysConf0 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+sysout<0>   |        20.672(R)|      SLOW  |         6.301(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<1>   |        20.799(R)|      SLOW  |         6.041(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<2>   |        20.182(R)|      SLOW  |         6.318(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<3>   |        20.514(R)|      SLOW  |         6.310(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<4>   |        20.373(R)|      SLOW  |         6.341(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<5>   |        20.535(R)|      SLOW  |         6.306(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<6>   |        19.985(R)|      SLOW  |         6.346(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<7>   |        21.990(R)|      SLOW  |         6.847(R)|      FAST  |ro_to_counter     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock sysConf1 to Pad
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                  | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s) | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+sysout<0>   |        18.664(R)|      SLOW  |         6.201(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<1>   |        18.791(R)|      SLOW  |         5.941(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<2>   |        18.174(R)|      SLOW  |         6.218(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<3>   |        18.506(R)|      SLOW  |         6.210(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<4>   |        18.365(R)|      SLOW  |         6.241(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<5>   |        18.527(R)|      SLOW  |         6.206(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<6>   |        17.977(R)|      SLOW  |         6.246(R)|      FAST  |ro_to_counter     |   0.000|
+sysout<7>   |        19.982(R)|      SLOW  |         6.747(R)|      FAST  |ro_to_counter     |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------+--------+
+
+Clock to Setup on destination clock sysClock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sysClock       |    3.276|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sysConf0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sysClock       |   -2.994|         |         |         |
+sysConf0       |    3.879|         |         |         |
+sysConf1       |    3.879|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sysConf1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sysClock       |   -2.994|         |         |         |
+sysConf0       |    3.879|         |         |         |
+sysConf1       |    3.879|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+sysSel<0>      |sysout<0>      |   10.541|
+sysSel<0>      |sysout<1>      |   10.817|
+sysSel<0>      |sysout<2>      |   10.330|
+sysSel<0>      |sysout<3>      |   10.384|
+sysSel<0>      |sysout<4>      |   10.687|
+sysSel<0>      |sysout<5>      |   10.682|
+sysSel<0>      |sysout<6>      |   10.503|
+sysSel<0>      |sysout<7>      |   12.368|
+sysSel<1>      |sysout<0>      |   10.114|
+sysSel<1>      |sysout<1>      |   10.541|
+sysSel<1>      |sysout<2>      |   10.761|
+sysSel<1>      |sysout<3>      |   10.464|
+sysSel<1>      |sysout<4>      |   10.640|
+sysSel<1>      |sysout<5>      |   10.067|
+sysSel<1>      |sysout<6>      |   10.231|
+sysSel<1>      |sysout<7>      |   11.973|
+sysSel<2>      |sysout<0>      |   10.989|
+sysSel<2>      |sysout<1>      |   11.237|
+sysSel<2>      |sysout<2>      |   10.999|
+sysSel<2>      |sysout<3>      |   10.606|
+sysSel<2>      |sysout<4>      |   10.335|
+sysSel<2>      |sysout<5>      |   10.605|
+sysSel<2>      |sysout<6>      |   10.096|
+sysSel<2>      |sysout<7>      |   12.397|
+sysSel<3>      |sysout<0>      |   10.503|
+sysSel<3>      |sysout<1>      |   11.035|
+sysSel<3>      |sysout<2>      |   10.349|
+sysSel<3>      |sysout<3>      |   10.340|
+sysSel<3>      |sysout<4>      |   10.628|
+sysSel<3>      |sysout<5>      |   10.339|
+sysSel<3>      |sysout<6>      |   10.620|
+sysSel<3>      |sysout<7>      |   12.014|
+---------------+---------------+---------+
+
+
+Analysis completed Wed Oct 28 23:13:26 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 893 MB
+
+
+

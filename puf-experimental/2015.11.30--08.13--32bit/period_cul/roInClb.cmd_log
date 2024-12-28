@@ -1,0 +1,59 @@
+xst -intstyle ise -ifn "F:/PUF/period_cul/roInClb.xst" -ofn "F:/PUF/period_cul/roInClb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7z010-clg400-1I roInClb.ngc roInClb.ngd  
+map -intstyle ise -p xa7z010-clg400-1I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o roInClb_map.ncd roInClb.ngd roInClb.pcf 
+par -w -intstyle ise -ol high -mt off roInClb_map.ncd roInClb.ncd roInClb.pcf 
+trce -intstyle ise -v 3 -s 1I -n 3 -fastpaths -xml roInClb.twx roInClb.ncd -o roInClb.twr roInClb.pcf 
+par -w -intstyle ise -ol high -mt off roInClb_map.ncd roInClb.ncd roInClb.pcf 
+trce -intstyle ise -v 3 -s 1I -n 3 -fastpaths -xml roInClb.twx roInClb.ncd -o roInClb.twr roInClb.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roInClb.xst" -ofn "F:/PUF/period_cul/roInClb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7z010-clg400-1I roInClb.ngc roInClb.ngd  
+map -intstyle ise -p xa7z010-clg400-1I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o roInClb_map.ncd roInClb.ngd roInClb.pcf 
+par -w -intstyle ise -ol high -mt off roInClb_map.ncd roInClb.ncd roInClb.pcf 
+trce -intstyle ise -v 3 -s 1I -n 3 -fastpaths -xml roInClb.twx roInClb.ncd -o roInClb.twr roInClb.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roInClb.xst" -ofn "F:/PUF/period_cul/roInClb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7z010-clg400-1I roInClb.ngc roInClb.ngd  
+map -intstyle ise -p xa7z010-clg400-1I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o roInClb_map.ncd roInClb.ngd roInClb.pcf 
+par -w -intstyle ise -ol high -mt off roInClb_map.ncd roInClb.ncd roInClb.pcf 
+trce -intstyle ise -v 3 -s 1I -n 3 -fastpaths -xml roInClb.twx roInClb.ncd -o roInClb.twr roInClb.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roInClb.xst" -ofn "F:/PUF/period_cul/roInClb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7z010-clg400-1I roInClb.ngc roInClb.ngd  
+map -intstyle ise -p xa7z010-clg400-1I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o roInClb_map.ncd roInClb.ngd roInClb.pcf 
+par -w -intstyle ise -ol high -mt off roInClb_map.ncd roInClb.ncd roInClb.pcf 
+trce -intstyle ise -v 3 -s 1I -n 3 -fastpaths -xml roInClb.twx roInClb.ncd -o roInClb.twr roInClb.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roInClb.xst" -ofn "F:/PUF/period_cul/roInClb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7z020-clg400-1I roInClb.ngc roInClb.ngd  
+map -intstyle ise -p xa7z020-clg400-1I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o roInClb_map.ncd roInClb.ngd roInClb.pcf 
+par -w -intstyle ise -ol high -mt off roInClb_map.ncd roInClb.ncd roInClb.pcf 
+trce -intstyle ise -v 3 -s 1I -n 3 -fastpaths -xml roInClb.twx roInClb.ncd -o roInClb.twr roInClb.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roInClb.xst" -ofn "F:/PUF/period_cul/roInClb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7z020-clg400-1I roInClb.ngc roInClb.ngd  
+map -intstyle ise -p xa7z020-clg400-1I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o roInClb_map.ncd roInClb.ngd roInClb.pcf 
+par -w -intstyle ise -ol high -mt off roInClb_map.ncd roInClb.ncd roInClb.pcf 
+trce -intstyle ise -v 3 -s 1I -n 3 -fastpaths -xml roInClb.twx roInClb.ncd -o roInClb.twr roInClb.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roInClb.xst" -ofn "F:/PUF/period_cul/roInClb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7z020-clg400-1I roInClb.ngc roInClb.ngd  
+map -intstyle ise -p xa7z020-clg400-1I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o roInClb_map.ncd roInClb.ngd roInClb.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roInClb.xst" -ofn "F:/PUF/period_cul/roInClb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7z020-clg400-1I roInClb.ngc roInClb.ngd  
+map -intstyle ise -p xa7z020-clg400-1I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o roInClb_map.ncd roInClb.ngd roInClb.pcf 
+par -w -intstyle ise -ol high -mt off roInClb_map.ncd roInClb.ncd roInClb.pcf 
+trce -intstyle ise -v 3 -s 1I -n 3 -fastpaths -xml roInClb.twx roInClb.ncd -o roInClb.twr roInClb.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roInClb.xst" -ofn "F:/PUF/period_cul/roInClb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7z020-clg400-1I roInClb.ngc roInClb.ngd  
+map -intstyle ise -p xa7z020-clg400-1I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o roInClb_map.ncd roInClb.ngd roInClb.pcf 
+par -w -intstyle ise -ol high -mt off roInClb_map.ncd roInClb.ncd roInClb.pcf 
+trce -intstyle ise -v 3 -s 1I -n 3 -fastpaths -xml roInClb.twx roInClb.ncd -o roInClb.twr roInClb.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roInClb.xst" -ofn "F:/PUF/period_cul/roInClb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xa7z020-clg400-1I roInClb.ngc roInClb.ngd  
+map -intstyle ise -p xa7z020-clg400-1I -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o roInClb_map.ncd roInClb.ngd roInClb.pcf 
+par -w -intstyle ise -ol high -mt off roInClb_map.ncd roInClb.ncd roInClb.pcf 
+trce -intstyle ise -v 3 -s 1I -n 3 -fastpaths -xml roInClb.twx roInClb.ncd -o roInClb.twr roInClb.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roInClb.xst" -ofn "F:/PUF/period_cul/roInClb.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7z020-clg484-1 roInClb.ngc roInClb.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o roInClb_map.ncd roInClb.ngd roInClb.pcf 
+par -w -intstyle ise -ol high -mt off roInClb_map.ncd roInClb.ncd roInClb.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml roInClb.twx roInClb.ncd -o roInClb.twr roInClb.pcf 
+netgen -intstyle ise -s 1  -pcf roInClb.pcf -rpw 100 -tpw 0 -ar Structure -tm roInClb -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim roInClb.ncd roInClb_timesim.vhd 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roInClb.xst" -ofn "F:/PUF/period_cul/roInClb.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7z020-clg484-1 roInClb.ngc roInClb.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o roInClb_map.ncd roInClb.ngd roInClb.pcf 

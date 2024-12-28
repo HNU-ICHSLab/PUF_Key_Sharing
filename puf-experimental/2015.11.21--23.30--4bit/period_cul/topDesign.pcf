@@ -1,0 +1,27 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Sat Nov 21 23:16:32 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+MACRO "ro_module11_inst/roModule11_inst" LOCATE = SITE "SLICE_X7Y11" LEVEL 1;
+MACRO "ro_module33_inst/roModule33_inst" LOCATE = SITE "SLICE_X5Y5" LEVEL 1;
+MACRO "ro_module_inst/roModule_inst" LOCATE = SITE "SLICE_X39Y8" LEVEL 1;
+MACRO "ro_module22_inst/roModule22_inst" LOCATE = SITE "SLICE_X9Y10" LEVEL 1;
+MACRO "ro_module0_inst/roModule0_inst" LOCATE = SITE "SLICE_X33Y10" LEVEL 1;
+MACRO "ro_module3_inst/roModule3_inst" LOCATE = SITE "SLICE_X13Y15" LEVEL 1;
+MACRO "ro_module2_inst/roModule2_inst" LOCATE = SITE "SLICE_X9Y11" LEVEL 1;
+MACRO "ro_module1_inst/roModule1_inst" LOCATE = SITE "SLICE_X7Y10" LEVEL 1;
+COMP "sysClock" LOCATE = SITE "L16" LEVEL 1;
+COMP "sysConf0" LOCATE = SITE "R18" LEVEL 1;
+COMP "sysConf1" LOCATE = SITE "P16" LEVEL 1;
+COMP "sysSel<0>" LOCATE = SITE "G15" LEVEL 1;
+COMP "sysSel<1>" LOCATE = SITE "P15" LEVEL 1;
+COMP "sysSel<2>" LOCATE = SITE "W13" LEVEL 1;
+COMP "sysSel<3>" LOCATE = SITE "T16" LEVEL 1;
+COMP "sysout<0>" LOCATE = SITE "M14" LEVEL 1;
+COMP "sysout<1>" LOCATE = SITE "M15" LEVEL 1;
+COMP "sysout<2>" LOCATE = SITE "G14" LEVEL 1;
+COMP "sysout<3>" LOCATE = SITE "D18" LEVEL 1;
+COMP "sysRst" LOCATE = SITE "Y16" LEVEL 1;
+SCHEMATIC END;
+

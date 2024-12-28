@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Xilinx/period_cul/topDesign_isim_beh.exe" -prj "D:/Xilinx/period_cul/topDesign_beh.prj" "work.topDesign" 

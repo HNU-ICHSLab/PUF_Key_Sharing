@@ -1,0 +1,129 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "sysout[3]" IOSTANDARD = LVCMOS33;
+NET "sysout[2]" IOSTANDARD = LVCMOS33;
+NET "sysout[1]" IOSTANDARD = LVCMOS33;
+NET "sysout[0]" IOSTANDARD = LVCMOS33;
+NET "sysSel[3]" IOSTANDARD = LVCMOS33;
+NET "sysSel[2]" IOSTANDARD = LVCMOS33;
+NET "sysSel[1]" IOSTANDARD = LVCMOS33;
+NET "sysSel[0]" IOSTANDARD = LVCMOS33;
+NET "sysClock" IOSTANDARD = LVCMOS33;
+NET "sysConf0" IOSTANDARD = LVCMOS33;
+NET "sysConf1" IOSTANDARD = LVCMOS33;
+NET "sysRst" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "sysRst" LOC = Y16;
+NET "sysConf1" LOC = P16;
+NET "sysConf0" LOC = R18;
+NET "sysClock" LOC = L16;
+
+NET "sysSel[0]" LOC = G15;
+NET "sysSel[1]" LOC = P15;
+NET "sysSel[2]" LOC = W13;
+NET "sysSel[3]" LOC = T16;
+
+NET "sysout[3]" LOC = D18;
+NET "sysout[2]" LOC = G14;
+NET "sysout[1]" LOC = M15;
+NET "sysout[0]" LOC = M14;
+
+
+INST "ro_inst_top/RO_inst/roModule_inst" loc = "SLICE_X9Y8";
+INST "ro_inst_top/RO_inst0/roModule_inst" loc = "SLICE_X9Y9";
+
+INST "ro_inst_top_1/RO_inst/roModule_inst" loc = "SLICE_X9Y10";
+INST "ro_inst_top_1/RO_inst0/roModule_inst" loc = "SLICE_X9Y11";
+
+INST "ro_inst_top_2/RO_inst/roModule_inst" loc = "SLICE_X9Y12";
+INST "ro_inst_top_2/RO_inst0/roModule_inst" loc = "SLICE_X9Y13";
+
+INST "ro_inst_top_3/RO_inst/roModule_inst" loc = "SLICE_X9Y14";
+INST "ro_inst_top_3/RO_inst0/roModule_inst" loc = "SLICE_X9Y15";
+
+INST "ro_inst_top_4/RO_inst/roModule_inst" loc = "SLICE_X9Y16";
+INST "ro_inst_top_4/RO_inst0/roModule_inst" loc = "SLICE_X9Y17";
+
+INST "ro_inst_top_5/RO_inst/roModule_inst" loc = "SLICE_X9Y18";
+INST "ro_inst_top_5/RO_inst0/roModule_inst" loc = "SLICE_X9Y19";
+
+INST "ro_inst_top_6/RO_inst/roModule_inst" loc = "SLICE_X9Y20";
+INST "ro_inst_top_6/RO_inst0/roModule_inst" loc = "SLICE_X9Y21";
+
+INST "ro_inst_top_7/RO_inst/roModule_inst" loc = "SLICE_X9Y22";
+INST "ro_inst_top_7/RO_inst0/roModule_inst" loc = "SLICE_X9Y23";
+
+INST "ro_inst_top_8/RO_inst/roModule_inst" loc = "SLICE_X9Y24";
+INST "ro_inst_top_8/RO_inst0/roModule_inst" loc = "SLICE_X9Y25";
+
+INST "ro_inst_top_9/RO_inst/roModule_inst" loc = "SLICE_X9Y26";
+INST "ro_inst_top_9/RO_inst0/roModule_inst" loc = "SLICE_X9Y27";
+
+INST "ro_inst_top_10/RO_inst/roModule_inst" loc = "SLICE_X9Y28";
+INST "ro_inst_top_10/RO_inst0/roModule_inst" loc = "SLICE_X9Y29";
+
+INST "ro_inst_top_11/RO_inst/roModule_inst" loc = "SLICE_X9Y30";
+INST "ro_inst_top_11/RO_inst0/roModule_inst" loc = "SLICE_X9Y31";
+
+INST "ro_inst_top_12/RO_inst/roModule_inst" loc = "SLICE_X9Y32";
+INST "ro_inst_top_12/RO_inst0/roModule_inst" loc = "SLICE_X9Y33";
+
+INST "ro_inst_top_13/RO_inst/roModule_inst" loc = "SLICE_X9Y34";
+INST "ro_inst_top_13/RO_inst0/roModule_inst" loc = "SLICE_X9Y35";
+
+INST "ro_inst_top_14/RO_inst/roModule_inst" loc = "SLICE_X9Y36";
+INST "ro_inst_top_14/RO_inst0/roModule_inst" loc = "SLICE_X9Y37";
+
+INST "ro_inst_top_15/RO_inst/roModule_inst" loc = "SLICE_X9Y38";
+INST "ro_inst_top_15/RO_inst0/roModule_inst" loc = "SLICE_X9Y39";
+
+INST "ro_inst_top_16/RO_inst/roModule_inst" loc = "SLICE_X7Y10";
+INST "ro_inst_top_16/RO_inst0/roModule_inst" loc = "SLICE_X7Y11";
+
+INST "ro_inst_top_17/RO_inst/roModule_inst" loc = "SLICE_X7Y12";
+INST "ro_inst_top_17/RO_inst0/roModule_inst" loc = "SLICE_X7Y13";
+
+INST "ro_inst_top_18/RO_inst/roModule_inst" loc = "SLICE_X7Y14";
+INST "ro_inst_top_18/RO_inst0/roModule_inst" loc = "SLICE_X7Y15";
+
+INST "ro_inst_top_19/RO_inst/roModule_inst" loc = "SLICE_X7Y16";
+INST "ro_inst_top_19/RO_inst0/roModule_inst" loc = "SLICE_X7Y17";
+
+INST "ro_inst_top_20/RO_inst/roModule_inst" loc = "SLICE_X7Y18";
+INST "ro_inst_top_20/RO_inst0/roModule_inst" loc = "SLICE_X7Y19";
+
+INST "ro_inst_top_21/RO_inst/roModule_inst" loc = "SLICE_X7Y20";
+INST "ro_inst_top_21/RO_inst0/roModule_inst" loc = "SLICE_X7Y21";
+
+INST "ro_inst_top_22/RO_inst/roModule_inst" loc = "SLICE_X7Y22";
+INST "ro_inst_top_22/RO_inst0/roModule_inst" loc = "SLICE_X7Y23";
+
+INST "ro_inst_top_23/RO_inst/roModule_inst" loc = "SLICE_X7Y24";
+INST "ro_inst_top_23/RO_inst0/roModule_inst" loc = "SLICE_X7Y25";
+
+INST "ro_inst_top_24/RO_inst/roModule_inst" loc = "SLICE_X7Y26";
+INST "ro_inst_top_24/RO_inst0/roModule_inst" loc = "SLICE_X7Y27";
+
+INST "ro_inst_top_25/RO_inst/roModule_inst" loc = "SLICE_X7Y28";
+INST "ro_inst_top_25/RO_inst0/roModule_inst" loc = "SLICE_X7Y29";
+
+INST "ro_inst_top_26/RO_inst/roModule_inst" loc = "SLICE_X7Y30";
+INST "ro_inst_top_26/RO_inst0/roModule_inst" loc = "SLICE_X7Y31";
+
+INST "ro_inst_top_27/RO_inst/roModule_inst" loc = "SLICE_X7Y32";
+INST "ro_inst_top_27/RO_inst0/roModule_inst" loc = "SLICE_X7Y33";
+
+INST "ro_inst_top_28/RO_inst/roModule_inst" loc = "SLICE_X7Y34";
+INST "ro_inst_top_28/RO_inst0/roModule_inst" loc = "SLICE_X7Y35";
+
+INST "ro_inst_top_29/RO_inst/roModule_inst" loc = "SLICE_X7Y36";
+INST "ro_inst_top_29/RO_inst0/roModule_inst" loc = "SLICE_X7Y37";
+
+INST "ro_inst_top_30/RO_inst/roModule_inst" loc = "SLICE_X7Y38";
+INST "ro_inst_top_30/RO_inst0/roModule_inst" loc = "SLICE_X7Y39";
+
+INST "ro_inst_top_31/RO_inst/roModule_inst" loc = "SLICE_X7Y40";
+INST "ro_inst_top_31/RO_inst0/roModule_inst" loc = "SLICE_X7Y41";

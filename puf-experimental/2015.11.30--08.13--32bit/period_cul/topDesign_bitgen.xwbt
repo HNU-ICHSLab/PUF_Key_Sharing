@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Xilinx\period_cul\topDesign.ncd
+OUTFILE=D:\Xilinx\period_cul\topDesign.bit
+FAMILY=Zynq
+PART=xc7z010-1clg400
+WORKINGDIR=D:\Xilinx\period_cul
+LICENSE=WebPack
+USER_INFO=__0_0_0

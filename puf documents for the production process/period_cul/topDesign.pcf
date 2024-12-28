@@ -1,0 +1,24 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Wed Oct 28 23:12:16 2015
+//! **************************************************************************
+
+SCHEMATIC START;
+MACRO "ro_module_inst/roModule_inst" LOCATE = SITE "SLICE_X51Y14" LEVEL 1;
+COMP "sysConf0" LOCATE = SITE "M15" LEVEL 1;
+COMP "sysConf1" LOCATE = SITE "H17" LEVEL 1;
+COMP "sysRst" LOCATE = SITE "F22" LEVEL 1;
+COMP "sysClock" LOCATE = SITE "Y9" LEVEL 1;
+COMP "sysSel<0>" LOCATE = SITE "H19" LEVEL 1;
+COMP "sysSel<1>" LOCATE = SITE "F21" LEVEL 1;
+COMP "sysout<0>" LOCATE = SITE "T22" LEVEL 1;
+COMP "sysSel<2>" LOCATE = SITE "H22" LEVEL 1;
+COMP "sysout<1>" LOCATE = SITE "T21" LEVEL 1;
+COMP "sysSel<3>" LOCATE = SITE "G22" LEVEL 1;
+COMP "sysout<2>" LOCATE = SITE "U22" LEVEL 1;
+COMP "sysout<3>" LOCATE = SITE "U21" LEVEL 1;
+COMP "sysout<4>" LOCATE = SITE "V22" LEVEL 1;
+COMP "sysout<5>" LOCATE = SITE "W22" LEVEL 1;
+COMP "sysout<6>" LOCATE = SITE "U19" LEVEL 1;
+COMP "sysout<7>" LOCATE = SITE "U14" LEVEL 1;
+SCHEMATIC END;
+

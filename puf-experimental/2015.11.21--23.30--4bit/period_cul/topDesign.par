@@ -1,0 +1,192 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+PC20140911064::  Sat Nov 21 23:16:36 2015
+
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd
+topDesign.pcf 
+
+
+Constraints file: topDesign.pcf.
+Loading device for application Rf_Device from file '7z010.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "topDesign" is an NCD, version 3.2, device xc7z010, package clg400, speed -1
+Loading device for application Rf_Device from file '7z020.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "HM_ro" is an NCD, version 3.2, device xa7z020, package clg400, speed -1i
+   "HM_ro_0" is an NCD, version 3.2, device xa7z020, package clg400, speed -1i
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.08 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGs                           2 out of 32      6%
+   Number of External IOB33s                12 out of 100    12%
+      Number of LOCed IOB33s                12 out of 12    100%
+
+   Number of MMCME2_ADVs                     1 out of 2      50%
+   Number of Slices                        225 out of 4400    5%
+   Number of Slice Registers               273 out of 35200   1%
+      Number used as Flip Flops            273
+      Number used as Latches                 0
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                    739 out of 17600   4%
+   Number of Slice LUT-Flip Flop pairs     739 out of 17600   4%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 23 secs 
+Finished initial Timing Analysis.  REAL time: 23 secs 
+
+Starting Router
+
+
+Phase  1  : 2234 unrouted;      REAL time: 23 secs 
+
+Phase  2  : 1869 unrouted;      REAL time: 23 secs 
+
+Phase  3  : 224 unrouted;      REAL time: 24 secs 
+
+Phase  4  : 236 unrouted; (Par is working to improve performance)     REAL time: 26 secs 
+
+Updating file: topDesign.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 27 secs 
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 27 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 27 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 27 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 27 secs 
+Total REAL time to Router completion: 27 secs 
+Total CPU time to Router completion: 27 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|clock_inst/clkfbout_ |              |      |      |            |             |
+|                 buf |BUFGCTRL_X0Y31| No   |    1 |  0.000     |  1.663      |
++---------------------+--------------+------+------+------------+-------------+
+|       clk_to_driver |BUFGCTRL_X0Y30| No   |    8 |  0.002     |  1.678      |
++---------------------+--------------+------+------+------------+-------------+
+|   ro11_to_counter11 |         Local|      |   13 |  0.675     |  2.181      |
++---------------------+--------------+------+------+------------+-------------+
+|   ro33_to_counter33 |         Local|      |   10 |  0.636     |  2.999      |
++---------------------+--------------+------+------+------------+-------------+
+|       ro_to_counter |         Local|      |   13 |  1.230     |  1.655      |
++---------------------+--------------+------+------+------------+-------------+
+|   ro22_to_counter22 |         Local|      |   12 |  0.640     |  1.826      |
++---------------------+--------------+------+------+------------+-------------+
+|     ro0_to_counter0 |         Local|      |   10 |  0.305     |  0.730      |
++---------------------+--------------+------+------+------------+-------------+
+|     ro3_to_counter3 |         Local|      |   11 |  0.552     |  2.703      |
++---------------------+--------------+------+------+------------+-------------+
+|     ro2_to_counter2 |         Local|      |   13 |  0.831     |  2.219      |
++---------------------+--------------+------+------+------------+-------------+
+|     ro1_to_counter1 |         Local|      |   10 |  1.054     |  2.480      |
++---------------------+--------------+------+------+------------+-------------+
+|   clock_inst/clkin1 |         Local|      |    1 |  0.000     |  1.285      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 678 (Setup: 678, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro1 | SETUP       |         N/A|     4.359ns|     N/A|         469
+  1_to_counter11                            | HOLD        |     0.232ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro3 | SETUP       |         N/A|     4.063ns|     N/A|         209
+  3_to_counter33                            | HOLD        |     0.414ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.990ns|     N/A|           0
+  to_counter                                | HOLD        |     0.093ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro2 | SETUP       |         N/A|     3.833ns|     N/A|           0
+  2_to_counter22                            | HOLD        |     0.354ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro0 | SETUP       |         N/A|     3.730ns|     N/A|           0
+  _to_counter0                              | HOLD        |     0.509ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro3 | SETUP       |         N/A|     3.814ns|     N/A|           0
+  _to_counter3                              | HOLD        |     0.376ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro2 | SETUP       |         N/A|     3.871ns|     N/A|           0
+  _to_counter2                              | HOLD        |     0.266ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro1 | SETUP       |         N/A|     3.957ns|     N/A|           0
+  _to_counter1                              | HOLD        |     0.335ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.287ns|     N/A|           0
+  _to_driver                                | HOLD        |     0.279ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+2 constraints not met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 28 secs 
+Total CPU time to PAR completion: 28 secs 
+
+Peak Memory Usage:  947 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file topDesign.ncd
+
+
+
+PAR done!

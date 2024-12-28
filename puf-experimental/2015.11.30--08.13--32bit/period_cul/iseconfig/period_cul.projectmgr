@@ -1,0 +1,299 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="period_cul" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/RO_0 - Behavioral D:|Xilinx|period_cul|RO.vhd/RO_inst - roModule - Behavioral</ClosedNode>
+         <ClosedNode>/roCounter_ben - behavior D:|Xilinx|period_cul|roCounter_ben.vhd</ClosedNode>
+         <ClosedNode>/roModule0 - Behavioral D:|Xilinx|period_cul|roModule0.vhd</ClosedNode>
+         <ClosedNode>/roModule1 - Behavioral D:|Xilinx|period_cul|roModule1.vhd</ClosedNode>
+         <ClosedNode>/roModule11 - Behavioral D:|Xilinx|period_cul|roModule11.vhd</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top - RO - Behavioral/RO_inst - roModule - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top - RO - Behavioral/RO_inst0 - roModule - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_1 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_10 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_11 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_12 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_13 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_14 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_15 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_16 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_17 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_18 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_19 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_2 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_20 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_21 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_22 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_23 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_24 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_25 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_26 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_27 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_28 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_29 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_3 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_30 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_31 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_4 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_5 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_6 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_7 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_8 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_inst_top_9 - RO - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_module0_inst - roModule - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_module0_inst - roModule0 - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_module11_inst - roModule - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_module11_inst - roModule11 - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_module1_inst - roModule - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_module1_inst - roModule1 - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_module_inst - roModule - Behavioral</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>topDesign - Behavioral (D:/Xilinx/period_cul/topDesign.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >29</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001e5000000020000000000000000000000000200000064ffffffff000000810000000300000002000001e50000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>topDesign - Behavioral (D:/Xilinx/period_cul/topDesign.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Manage Configuration Project (iMPACT)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d30000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Manage Configuration Project (iMPACT)</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000028e000000040101000100000000000000000000000064ffffffff0000008100000000000000040000007b0000000100000000000000440000000100000000000000660000000100000000000001690000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>counterOutPut.vhd</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000110000000010001000100000000000000000000000064ffffffff000000810000000000000001000001100000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Implement Design/Map/Generate Post-Map Static Timing</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Back-annotate Pin Locations</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate IBIS Model</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route/Generate Post-Place &amp; Route Static Timing</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e40000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/roCounter0_ben - behavior D:|Xilinx|period_cul|roCounter0_ben.vhd</ClosedNode>
+         <ClosedNode>/roCounter_ben - behavior D:|Xilinx|period_cul|roCounter_ben.vhd</ClosedNode>
+         <ClosedNode>/roDriver_ben - behavior D:|Xilinx|period_cul|roDriver_ben.vhd</ClosedNode>
+         <ClosedNode>/roModule - Behavioral F:|PUF|period_cul|roModule.vhd</ClosedNode>
+         <ClosedNode>/roModule0_ben - behavior D:|Xilinx|period_cul|roModule0_ben.vhd</ClosedNode>
+         <ClosedNode>/roModule_Ben - behavior D:|Xilinx|period_cul|roModule_Ben.vhd</ClosedNode>
+         <ClosedNode>/roModule_Ben - behavior D:|Xilinx|period_cul|roModule_Ben.vhd/uut - roModule - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_module0_inst - roModule0 - Behavioral</ClosedNode>
+         <ClosedNode>/topDesign - Behavioral D:|Xilinx|period_cul|topDesign.vhd/ro_module_inst - roModule - Behavioral</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>roCounter0_ben - behavior (D:/Xilinx/period_cul/roCounter0_ben.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000025a000000020000000000000000000000000200000064ffffffff0000008100000003000000020000025a0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>roCounter0_ben - behavior (D:/Xilinx/period_cul/roCounter0_ben.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000020d000000010000000100000000000000000000000064ffffffff0000008100000000000000010000020d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b6000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b60000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e4000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e40000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/roDriver_ben - behavior F:|PUF|period_cul|roDriver_ben.vhd</ClosedNode>
+         <ClosedNode>/roModule_Ben - behavior F:|PUF|period_cul|roModule_Ben.vhd/uut - roModule</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>roInClb - Structure (F:/PUF/period_cul/netgen/par/roInClb_timesim.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000170000000020000000000000000000000000200000064ffffffff000000810000000300000002000001700000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>roInClb - Structure (F:/PUF/period_cul/netgen/par/roInClb_timesim.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c3000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c30000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ISim Simulator</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001c8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001c80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ISim Simulator</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000000fd000000bc01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e2000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e20000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_XCO" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001ae000000010000000100000000000000000000000064ffffffff000000810000000000000001000001ae0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="ManualCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>xc7z010-1clg400</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >1</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000144000000020000000000000000000000000000000064ffffffff000000810000000000000002000000c700000001000000000000007d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>xc7z010-1clg400</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="ManualCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>roCounter_ben.vhd (D:/Xilinx/period_cul/roCounter_ben.vhd)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000010d000000020000000000000000000000000000000064ffffffff0000008100000000000000020000009000000001000000000000007d0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>roCounter_ben.vhd (D:/Xilinx/period_cul/roCounter_ben.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_BMM" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+</Project>

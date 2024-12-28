@@ -1,0 +1,2 @@
+vhdl isim_temp "roCounter.vhd"
+vhdl isim_temp "roCounter_ben.vhd"

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=F:\PUF\period_cul\impact.xsl
+OUTFILE=F:\PUF\period_cul\impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=F:\PUF\period_cul
+LICENSE=iMPACT
+USER_INFO=iMPACT

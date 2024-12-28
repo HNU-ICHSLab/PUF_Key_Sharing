@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "D:/Xilinx/period_cul/roCounter0_ben_isim_beh.exe" -prj "D:/Xilinx/period_cul/roCounter0_ben_beh.prj" "work.roCounter0_ben" 

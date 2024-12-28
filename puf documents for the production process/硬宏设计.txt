@@ -1,0 +1,4 @@
+进入google 搜索   how create a hardmacro
+
+看 维基百科的那篇文章。
+http://wiki.eng.iastate.edu/reconfigurable-computing-wiki/index.php/Creating_Hard_Macros

@@ -1,0 +1,45 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "sysout[3]" IOSTANDARD = LVCMOS33;
+NET "sysout[2]" IOSTANDARD = LVCMOS33;
+NET "sysout[1]" IOSTANDARD = LVCMOS33;
+NET "sysout[0]" IOSTANDARD = LVCMOS33;
+NET "sysSel[3]" IOSTANDARD = LVCMOS33;
+NET "sysSel[2]" IOSTANDARD = LVCMOS33;
+NET "sysSel[1]" IOSTANDARD = LVCMOS33;
+NET "sysSel[0]" IOSTANDARD = LVCMOS33;
+NET "sysClock" IOSTANDARD = LVCMOS33;
+NET "sysConf0" IOSTANDARD = LVCMOS33;
+NET "sysConf1" IOSTANDARD = LVCMOS33;
+NET "sysRst" IOSTANDARD = LVCMOS33;
+
+# PlanAhead Generated physical constraints 
+
+NET "sysRst" LOC = Y16;
+NET "sysConf1" LOC = P16;
+NET "sysConf0" LOC = R18;
+NET "sysClock" LOC = L16;
+
+NET "sysSel[0]" LOC = G15;
+NET "sysSel[1]" LOC = P15;
+NET "sysSel[2]" LOC = W13;
+NET "sysSel[3]" LOC = T16;
+
+NET "sysout[3]" LOC = D18;
+NET "sysout[2]" LOC = G14;
+NET "sysout[1]" LOC = M15;
+NET "sysout[0]" LOC = M14;
+
+
+INST "ro_module_inst/roModule_inst" loc = "SLICE_X39Y8";
+INST "ro_module0_inst/roModule0_inst" loc = "SLICE_X33Y10";
+
+INST "ro_module1_inst/roModule1_inst" loc = "SLICE_X7Y10";
+INST "ro_module11_inst/roModule11_inst" loc = "SLICE_X7Y11";
+
+INST "ro_module2_inst/roModule2_inst" loc = "SLICE_X9Y11";
+INST "ro_module22_inst/roModule22_inst" loc = "SLICE_X9Y10";
+
+INST "ro_module3_inst/roModule3_inst" loc = "SLICE_X13Y15";
+INST "ro_module33_inst/roModule33_inst" loc = "SLICE_X5Y5";

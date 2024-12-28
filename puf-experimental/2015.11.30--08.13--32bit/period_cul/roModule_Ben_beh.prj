@@ -1,0 +1,3 @@
+vhdl work "roModule.vhd"
+vhdl work "roModule_Ben.vhd"
+vhdl work "ipcore_dir/clk_10Mc/example_design/clk_10Mc_exdes.vhd"

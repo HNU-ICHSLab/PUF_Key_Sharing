@@ -1,0 +1,291 @@
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+netgen -intstyle ise -s 1  -pcf topDesign.pcf -rpw 100 -tpw 0 -ar Structure -tm topDesign -insert_pp_buffers true -w -dir netgen/par -ofmt vhdl -sim topDesign.ncd topDesign_timesim.vhd 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "F:/PUF/period_cul/topDesign.xst" -ofn "F:/PUF/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z020-clg484-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z020-clg484-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+xst -intstyle ise -ifn "D:/Xilinx/period_cul/topDesign.xst" -ofn "D:/Xilinx/period_cul/topDesign.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc topDesign.ucf -p xc7z010-clg400-1 topDesign.ngc topDesign.ngd  
+map -intstyle ise -p xc7z010-clg400-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o topDesign_map.ncd topDesign.ngd topDesign.pcf 
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd topDesign.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf -ucf topDesign.ucf 
+bitgen -intstyle ise -f topDesign.ut topDesign.ncd 

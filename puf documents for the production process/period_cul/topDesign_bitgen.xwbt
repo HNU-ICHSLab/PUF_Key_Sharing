@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\PUF\period_cul\topDesign.ncd
+OUTFILE=F:\PUF\period_cul\topDesign.bit
+FAMILY=Zynq
+PART=xc7z020-1clg484
+WORKINGDIR=F:\PUF\period_cul
+LICENSE=WebPack
+USER_INFO=135256_15690819_173552794_661

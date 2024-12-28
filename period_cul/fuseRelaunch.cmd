@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "F:/PUF/period_cul/roInClb_isim_par.exe" -prj "F:/PUF/period_cul/roInClb_par.prj" "work.roInClb" 

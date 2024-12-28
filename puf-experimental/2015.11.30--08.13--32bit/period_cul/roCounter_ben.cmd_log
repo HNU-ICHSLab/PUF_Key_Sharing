@@ -1,0 +1,1 @@
+vhdtdtfi -prj period_cul -o F:/PUF/period_cul/roCounter_ben.vhi -module roCounter_ben -template f:/Xilinx/14.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work roCounter.vhd -lib work roCounter_ben.vhd -lib work ipcore_dir/clk_10Mc/example_design/clk_10Mc_exdes.vhd 

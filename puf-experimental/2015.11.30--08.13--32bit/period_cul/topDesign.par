@@ -1,0 +1,535 @@
+Release 14.7 par P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+PC20140911064::  Mon Nov 30 08:07:52 2015
+
+par -w -intstyle ise -ol high -mt off topDesign_map.ncd topDesign.ncd
+topDesign.pcf 
+
+
+Constraints file: topDesign.pcf.
+Loading device for application Rf_Device from file '7z010.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "topDesign" is an NCD, version 3.2, device xc7z010, package clg400, speed -1
+Loading device for application Rf_Device from file '7z020.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+   "HM_ro" is an NCD, version 3.2, device xa7z020, package clg400, speed -1i
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000 Celsius)
+Initializing voltage to 0.950 Volts. (default - Range: 0.950 to 1.050 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.08 2013-10-13".
+
+
+
+Device Utilization Summary:
+
+   Number of BUFGs                           2 out of 32      6%
+   Number of External IOB33s                12 out of 100    12%
+      Number of LOCed IOB33s                12 out of 12    100%
+
+   Number of MMCME2_ADVs                     1 out of 2      50%
+   Number of Slices                       1744 out of 4400   39%
+   Number of Slice Registers              2065 out of 35200   5%
+      Number used as Flip Flops           2065
+      Number used as Latches                 0
+      Number used as LatchThrus              0
+
+   Number of Slice LUTS                   5624 out of 17600  31%
+   Number of Slice LUT-Flip Flop pairs    5624 out of 17600  31%
+
+
+Overall effort level (-ol):   High 
+Router effort level (-rl):    High 
+
+Starting initial Timing Analysis.  REAL time: 23 secs 
+Finished initial Timing Analysis.  REAL time: 23 secs 
+
+Starting Router
+
+
+Phase  1  : 16190 unrouted;      REAL time: 25 secs 
+
+Phase  2  : 13668 unrouted;      REAL time: 26 secs 
+
+Phase  3  : 1578 unrouted;      REAL time: 31 secs 
+
+Phase  4  : 1914 unrouted; (Par is working to improve performance)     REAL time: 36 secs 
+
+Updating file: topDesign.ncd with current fully routed design.
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 11 secs 
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 27 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 27 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 27 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 1 mins 29 secs 
+Total REAL time to Router completion: 1 mins 29 secs 
+Total CPU time to Router completion: 1 mins 30 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|clock_inst/clkfbout_ |              |      |      |            |             |
+|                 buf |BUFGCTRL_X0Y31| No   |    1 |  0.000     |  1.663      |
++---------------------+--------------+------+------+------------+-------------+
+|       clk_to_driver |BUFGCTRL_X0Y30| No   |   10 |  0.017     |  1.685      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_17/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   10 |  0.470     |  1.200      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_23/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   12 |  1.185     |  3.131      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_3/ro_to_ |              |      |      |            |             |
+|             counter |         Local|      |   10 |  0.830     |  2.510      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_24/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   12 |  0.772     |  2.328      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top/ro0_to_c |              |      |      |            |             |
+|             ounter0 |         Local|      |   12 |  0.663     |  2.114      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top/ro_to_co |              |      |      |            |             |
+|               unter |         Local|      |   10 |  0.809     |  2.646      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_5/ro0_to |              |      |      |            |             |
+|           _counter0 |         Local|      |   11 |  0.625     |  1.617      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_11/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   10 |  0.931     |  3.756      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_1/ro_to_ |              |      |      |            |             |
+|             counter |         Local|      |   10 |  0.376     |  1.349      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_14/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   11 |  0.432     |  3.315      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_7/ro_to_ |              |      |      |            |             |
+|             counter |         Local|      |   10 |  0.739     |  2.784      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_13/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   11 |  0.927     |  2.910      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_31/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   11 |  0.698     |  3.257      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_8/ro_to_ |              |      |      |            |             |
+|             counter |         Local|      |   10 |  0.909     |  2.352      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_20/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   11 |  0.656     |  1.411      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_7/ro0_to |              |      |      |            |             |
+|           _counter0 |         Local|      |   11 |  0.458     |  2.634      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_20/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   13 |  0.638     |  1.401      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_1/ro0_to |              |      |      |            |             |
+|           _counter0 |         Local|      |   13 |  0.502     |  1.677      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_26/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   11 |  0.629     |  2.850      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_27/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   11 |  0.450     |  3.108      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_19/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   10 |  0.655     |  2.353      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_6/ro0_to |              |      |      |            |             |
+|           _counter0 |         Local|      |   12 |  0.923     |  2.996      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_21/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   11 |  0.748     |  2.172      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_5/ro_to_ |              |      |      |            |             |
+|             counter |         Local|      |   11 |  0.564     |  1.727      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_18/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   11 |  0.663     |  2.171      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_19/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   10 |  0.479     |  1.894      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_22/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   13 |  0.907     |  2.797      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_30/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   11 |  0.485     |  3.217      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_18/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   12 |  1.152     |  2.316      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_24/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   13 |  1.057     |  2.701      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_30/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   10 |  0.895     |  4.143      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_25/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   12 |  0.639     |  2.597      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_2/ro0_to |              |      |      |            |             |
+|           _counter0 |         Local|      |   10 |  0.954     |  3.253      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_12/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   12 |  0.748     |  2.775      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_11/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   10 |  0.643     |  2.897      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_15/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   11 |  0.634     |  3.481      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_14/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   13 |  0.635     |  3.432      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_31/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   11 |  0.806     |  2.835      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_9/ro_to_ |              |      |      |            |             |
+|             counter |         Local|      |   14 |  1.241     |  2.937      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_27/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   11 |  0.503     |  2.842      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_28/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   12 |  0.508     |  2.618      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_8/ro0_to |              |      |      |            |             |
+|           _counter0 |         Local|      |   10 |  0.748     |  1.981      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_29/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   12 |  0.517     |  3.040      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_16/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   11 |  0.798     |  3.041      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_10/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   17 |  0.688     |  2.821      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_16/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   14 |  0.919     |  2.225      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_22/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   12 |  0.467     |  2.618      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_2/ro_to_ |              |      |      |            |             |
+|             counter |         Local|      |   14 |  1.077     |  3.242      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_23/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   15 |  0.918     |  2.811      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_29/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   12 |  0.656     |  3.141      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_4/ro0_to |              |      |      |            |             |
+|           _counter0 |         Local|      |   12 |  0.482     |  2.324      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_25/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   10 |  0.599     |  2.784      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_3/ro0_to |              |      |      |            |             |
+|           _counter0 |         Local|      |   10 |  0.490     |  2.662      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_13/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   12 |  0.846     |  3.058      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_12/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   11 |  0.761     |  2.504      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_15/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   10 |  0.615     |  3.593      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_26/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   11 |  0.522     |  2.654      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_6/ro_to_ |              |      |      |            |             |
+|             counter |         Local|      |   10 |  0.719     |  2.761      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_28/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   13 |  0.544     |  3.309      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_9/ro0_to |              |      |      |            |             |
+|           _counter0 |         Local|      |   12 |  0.585     |  2.164      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_10/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   12 |  0.917     |  2.999      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_4/ro_to_ |              |      |      |            |             |
+|             counter |         Local|      |   14 |  1.122     |  2.430      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_17/ro_to |              |      |      |            |             |
+|            _counter |         Local|      |   10 |  1.321     |  1.999      |
++---------------------+--------------+------+------+------------+-------------+
+|ro_inst_top_21/ro0_t |              |      |      |            |             |
+|          o_counter0 |         Local|      |   10 |  0.859     |  2.283      |
++---------------------+--------------+------+------+------------+-------------+
+|   clock_inst/clkin1 |         Local|      |    1 |  0.000     |  1.285      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+* The fanout is the number of component pins not the individual BEL loads,
+for example SLICE loads not FF loads.
+
+Timing Score: 205787 (Setup: 205787, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.903ns|     N/A|          94
+  inst_top_17/ro0_to_counter0               | HOLD        |     0.492ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.865ns|     N/A|        1594
+  inst_top_23/ro_to_counter                 | HOLD        |     0.149ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.774ns|     N/A|        1741
+  inst_top_3/ro_to_counter                  | HOLD        |     0.403ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.678ns|     N/A|         197
+  inst_top_24/ro0_to_counter0               | HOLD        |     0.449ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.662ns|     N/A|         956
+  inst_top/ro0_to_counter0                  | HOLD        |     0.453ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.677ns|     N/A|          26
+  inst_top/ro_to_counter                    | HOLD        |     0.391ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.995ns|     N/A|        5331
+  inst_top_5/ro0_to_counter0                | HOLD        |     0.354ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.869ns|     N/A|        3137
+  inst_top_11/ro_to_counter                 | HOLD        |     0.410ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.541ns|     N/A|           0
+  inst_top_1/ro_to_counter                  | HOLD        |     0.530ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.819ns|     N/A|         214
+  inst_top_14/ro_to_counter                 | HOLD        |     0.492ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.811ns|     N/A|        1029
+  inst_top_7/ro_to_counter                  | HOLD        |     0.330ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.716ns|     N/A|         751
+  inst_top_13/ro0_to_counter0               | HOLD        |     0.422ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.933ns|     N/A|        1778
+  inst_top_31/ro0_to_counter0               | HOLD        |     0.317ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.660ns|     N/A|        1224
+  inst_top_8/ro_to_counter                  | HOLD        |     0.357ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.815ns|     N/A|         707
+  inst_top_20/ro_to_counter                 | HOLD        |     0.436ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.153ns|     N/A|        5816
+  inst_top_7/ro0_to_counter0                | HOLD        |     0.482ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.031ns|     N/A|        1891
+  inst_top_20/ro0_to_counter0               | HOLD        |     0.467ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.018ns|     N/A|        3588
+  inst_top_1/ro0_to_counter0                | HOLD        |     0.331ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.804ns|     N/A|         332
+  inst_top_26/ro0_to_counter0               | HOLD        |     0.326ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.364ns|     N/A|           0
+  inst_top_27/ro_to_counter                 | HOLD        |     0.506ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.059ns|     N/A|        1302
+  inst_top_19/ro0_to_counter0               | HOLD        |     0.428ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.728ns|     N/A|        3555
+  inst_top_6/ro0_to_counter0                | HOLD        |     0.368ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.614ns|     N/A|         476
+  inst_top_21/ro_to_counter                 | HOLD        |     0.401ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.734ns|     N/A|        2310
+  inst_top_5/ro_to_counter                  | HOLD        |     0.280ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.199ns|     N/A|        2661
+  inst_top_18/ro_to_counter                 | HOLD        |     0.326ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.642ns|     N/A|        1102
+  inst_top_19/ro_to_counter                 | HOLD        |     0.368ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.764ns|     N/A|          87
+  inst_top_22/ro0_to_counter0               | HOLD        |     0.439ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.078ns|     N/A|        6253
+  inst_top_30/ro0_to_counter0               | HOLD        |     0.294ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.613ns|     N/A|        6713
+  inst_top_18/ro0_to_counter0               | HOLD        |     0.357ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.993ns|     N/A|        7822
+  inst_top_24/ro_to_counter                 | HOLD        |     0.284ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.924ns|     N/A|        5231
+  inst_top_30/ro_to_counter                 | HOLD        |     0.217ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.243ns|     N/A|       12446
+  inst_top_25/ro0_to_counter0               | HOLD        |     0.409ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.878ns|     N/A|        4518
+  inst_top_2/ro0_to_counter0                | HOLD        |     0.200ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.754ns|     N/A|         440
+  inst_top_12/ro_to_counter                 | HOLD        |     0.356ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.693ns|     N/A|        4012
+  inst_top_11/ro0_to_counter0               | HOLD        |     0.409ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.083ns|     N/A|        1388
+  inst_top_15/ro_to_counter                 | HOLD        |     0.375ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.672ns|     N/A|         765
+  inst_top_14/ro0_to_counter0               | HOLD        |     0.364ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.763ns|     N/A|        1731
+  inst_top_31/ro_to_counter                 | HOLD        |     0.293ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.131ns|     N/A|        4205
+  inst_top_9/ro_to_counter                  | HOLD        |     0.166ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.675ns|     N/A|         778
+  inst_top_27/ro0_to_counter0               | HOLD        |     0.451ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.907ns|     N/A|        3403
+  inst_top_28/ro_to_counter                 | HOLD        |     0.458ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.896ns|     N/A|        6977
+  inst_top_8/ro0_to_counter0                | HOLD        |     0.445ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.818ns|     N/A|        5881
+  inst_top_29/ro0_to_counter0               | HOLD        |     0.378ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.016ns|     N/A|        3483
+  inst_top_16/ro_to_counter                 | HOLD        |     0.396ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.962ns|     N/A|        6398
+  inst_top_10/ro0_to_counter0               | HOLD        |     0.305ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.416ns|     N/A|        5281
+  inst_top_16/ro0_to_counter0               | HOLD        |     0.271ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.629ns|     N/A|           0
+  inst_top_22/ro_to_counter                 | HOLD        |     0.454ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.059ns|     N/A|        6946
+  inst_top_2/ro_to_counter                  | HOLD        |     0.360ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.912ns|     N/A|        1070
+  inst_top_23/ro0_to_counter0               | HOLD        |     0.445ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.013ns|     N/A|       13055
+  inst_top_29/ro_to_counter                 | HOLD        |     0.353ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.630ns|     N/A|           0
+  inst_top_4/ro0_to_counter0                | HOLD        |     0.493ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.759ns|     N/A|        2678
+  inst_top_25/ro_to_counter                 | HOLD        |     0.339ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.049ns|     N/A|        4727
+  inst_top_3/ro0_to_counter0                | HOLD        |     0.494ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.004ns|     N/A|        2928
+  inst_top_13/ro_to_counter                 | HOLD        |     0.342ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.040ns|     N/A|        5278
+  inst_top_12/ro0_to_counter0               | HOLD        |     0.434ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.624ns|     N/A|         242
+  inst_top_15/ro0_to_counter0               | HOLD        |     0.489ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.633ns|     N/A|         206
+  inst_top_26/ro_to_counter                 | HOLD        |     0.417ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.028ns|     N/A|        3152
+  inst_top_6/ro_to_counter                  | HOLD        |     0.355ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.053ns|     N/A|        7756
+  inst_top_28/ro0_to_counter0               | HOLD        |     0.385ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.875ns|     N/A|        7904
+  inst_top_9/ro0_to_counter0                | HOLD        |     0.459ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.909ns|     N/A|        1481
+  inst_top_10/ro_to_counter                 | HOLD        |     0.417ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.853ns|     N/A|        6873
+  inst_top_4/ro_to_counter                  | HOLD        |     0.289ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     4.701ns|     N/A|        6508
+  inst_top_17/ro_to_counter                 | HOLD        |     0.080ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net ro_ | SETUP       |         N/A|     3.922ns|     N/A|        4704
+  inst_top_21/ro0_to_counter0               | HOLD        |     0.288ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     3.463ns|     N/A|         655
+  _to_driver                                | HOLD        |     0.092ns|            |       0|           0
+----------------------------------------------------------------------------------------------------------
+
+
+61 constraints not met.
+INFO:Timing:2761 - N/A entries in the Constraints List may indicate that the 
+   constraint is not analyzed due to the following: No paths covered by this 
+   constraint; Other constraints intersect with this constraint; or This 
+   constraint was disabled by a Path Tracing Control. Please run the Timespec 
+   Interaction Report (TSI) via command line (trce tsi) or Timing Analyzer GUI.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 mins 31 secs 
+Total CPU time to PAR completion: 1 mins 31 secs 
+
+Peak Memory Usage:  1022 MB
+
+Placer: Placement generated during map.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file topDesign.ncd
+
+
+
+PAR done!

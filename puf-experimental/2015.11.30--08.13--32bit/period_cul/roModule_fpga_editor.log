@@ -1,0 +1,140 @@
+#:C59    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.49d
+#Current Working Directory:
+#:D   F:\PUF\period_cul
+#Date/Time:
+#:T   Thu Jul 09 01:10:49 2015
+#------------------------------
+	#Reading roModule.ncd...
+	#Loading device for application Rf_Device from file '7z020.nph' in environment f:\Xilinx\14.4\ISE_DS\ISE\.
+	#   "roModule" is an NCD, version 3.2, device xa7z020, package clg400, speed -1i
+	#   "HM_ro" is an NCD, version 3.2, device xa7z020, package clg400, speed -1i
+	#Design creation date: 2015.07.08.17.07.51
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+select site 'SLICE_X48Y63'
+	#site "SLICE_X48Y63",  type = SLICEL  (RPM grid X137Y126)
+	#4
+unselect site 'SLICE_X48Y63'
+	#5
+select -k comp 'roModuleConf0'
+	#6
+unselect comp 'roModuleConf0'
+	#7
+select -k comp 'roModule_inst/LUT1_out'
+	#8
+unselect -all
+	#9
+unselect -all
+	#10
+unselect -all
+	#11
+select net 'roModuleEna_IBUF'
+	#net "roModuleEna_IBUF"
+	#12
+unselect -all
+	#13
+select net 'roModuleConf1_IBUF'
+	#net "roModuleConf1_IBUF"
+	#14
+setattr main disable_draw on
+	#15
+setattr layer sites view off
+	#16
+setattr main disable_draw off
+	#Hint: change the visibility of more than one layer at a time by clicking on the apply button, clicking two or more layer buttons, and then clicking on the apply button again.
+	#17
+setattr main disable_draw on
+	#18
+setattr layer long_lines view off
+	#19
+setattr main disable_draw off
+	#20
+setattr main disable_draw on
+	#21
+setattr layer local_lines view off
+	#22
+setattr main disable_draw off
+	#23
+setattr main disable_draw on
+	#24
+setattr layer pinwires view off
+	#25
+setattr main disable_draw off
+	#26
+setattr main disable_draw on
+	#27
+setattr layer long_lines view on
+	#28
+setattr main disable_draw off
+	#29
+setattr main disable_draw on
+	#30
+setattr layer pinwires view on
+	#31
+setattr main disable_draw off
+	#32
+setattr main disable_draw on
+	#33
+setattr layer long_lines view off
+	#34
+setattr main disable_draw off
+	#35
+setattr main disable_draw on
+	#36
+setattr layer pinwires view off
+	#37
+setattr main disable_draw off
+	#38
+setattr main disable_draw on
+	#39
+setattr layer pips view on
+	#40
+setattr main disable_draw off
+	#41
+setattr main disable_draw on
+	#42
+setattr layer pips view off
+	#43
+setattr main disable_draw off
+	#44
+setattr main disable_draw on
+	#45
+setattr layer components view off
+	#46
+setattr main disable_draw off
+	#47
+setattr main disable_draw on
+	#48
+setattr layer routes view off
+	#49
+setattr main disable_draw off
+	#50
+setattr main disable_draw on
+	#51
+setattr layer ratsnests view off
+	#52
+setattr main disable_draw off
+	#53
+unselect -all
+	#54
+unselect -all
+	#55
+unselect -all
+	#56
+unselect -all
+	#57
+unselect -all
+	#58
+unselect -all
+	#59
+unselect -all
+	#60
+unselect -all

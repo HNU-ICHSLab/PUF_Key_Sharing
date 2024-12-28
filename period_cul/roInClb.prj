@@ -1,0 +1,2 @@
+vhdl work "../PUF_single/roInClb.vhd"
+vhdl work "ipcore_dir/clk_10Mc/example_design/clk_10Mc_exdes.vhd"

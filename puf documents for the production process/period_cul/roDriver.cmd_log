@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "F:/PUF/period_cul/roDriver.xst" -ofn "F:/PUF/period_cul/roDriver.syr" 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roDriver.xst" -ofn "F:/PUF/period_cul/roDriver.syr" 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roDriver.xst" -ofn "F:/PUF/period_cul/roDriver.syr" 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roDriver.xst" -ofn "F:/PUF/period_cul/roDriver.syr" 
+xst -intstyle ise -ifn "F:/PUF/period_cul/roDriver.xst" -ofn "F:/PUF/period_cul/roDriver.syr" 
+vhdtdtfi -prj period_cul -o F:/PUF/period_cul/roDriver.vhi -module roDriver -template f:/Xilinx/14.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work roDriver.vhd -lib work ipcore_dir/clk_10Mc/example_design/clk_10Mc_exdes.vhd 

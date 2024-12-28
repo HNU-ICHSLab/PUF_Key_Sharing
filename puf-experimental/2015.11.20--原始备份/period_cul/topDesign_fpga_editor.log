@@ -1,0 +1,33 @@
+#:C0     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   D:\Xilinx\period_cul
+#Date/Time:
+#:T   Sun Nov 15 19:30:36 2015
+#------------------------------
+	#Reading topDesign.ncd...
+	#Loading device for application Rf_Device from file '7z010.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "topDesign" is an NCD, version 3.2, device xc7z010, package clg400, speed -1
+	#Loading device for application Rf_Device from file '7z020.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "HM_ro" is an NCD, version 3.2, device xa7z020, package clg400, speed -1i
+	#Design creation date: 2015.11.15.11.28.42
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k hm 'ro_module_inst/roModule_inst'
+	#3
+unselect -all
+	#4
+select site 'SLICE_X29Y11'
+	#site "SLICE_X29Y11",  type = SLICEL  (RPM grid X103Y22)
+	#5
+unselect -all
+	#6
+select site 'SLICE_X29Y11'
+	#site "SLICE_X29Y11",  type = SLICEL  (RPM grid X103Y22)
+	#7
+post block

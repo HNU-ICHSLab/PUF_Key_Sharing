@@ -1,0 +1,44 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   D:\Xilinx\period_cul
+#Date/Time:
+#:T   Fri Nov 20 15:32:17 2015
+#------------------------------
+	#Reading topDesign.ncd...
+	#Loading device for application Rf_Device from file '7z010.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "topDesign" is an NCD, version 3.2, device xc7z010, package clg400, speed -1
+	#Loading device for application Rf_Device from file '7z020.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "HM_ro" is an NCD, version 3.2, device xa7z020, package clg400, speed -1i
+	#   "HM_ro_7" is an NCD, version 3.2, device xa7z020, package clg400, speed -1i
+	#Design creation date: 2015.11.20.00.38.59
+	#Building chip graphics...
+	#Loading speed info...
+	#Recovery will playback 0 commands
+	##:C0     
+	#Script "topDesign_fpga_editor.rcv" playback completed.
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k hm 'ro_module0_inst/roModule0_inst'
+	#3
+unselect hm 'ro_module0_inst/roModule0_inst'
+	#4
+select -k hm 'ro_module_inst/roModule_inst'
+	#5
+unselect hm 'ro_module_inst/roModule_inst'
+	#6
+select -k hm 'ro_module0_inst/roModule0_inst'
+	#7
+unselect -all
+	#8
+unselect -all
+	#9
+unselect -all
+	#10
+select site 'SLICE_X32Y10'
+	#site "SLICE_X32Y10",  type = SLICEM  (RPM grid X113Y20)
+	#11
+unselect -all

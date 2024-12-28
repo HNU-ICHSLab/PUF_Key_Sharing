@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "F:/PUF/period_cul/counterOutPut.xst" -ofn "F:/PUF/period_cul/counterOutPut.syr" 
+vhdtdtfi -prj period_cul -o F:/PUF/period_cul/counterOutPut.vhi -module counterOutPut -template f:/Xilinx/14.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work counterOutPut.vhd -lib work ipcore_dir/clk_10Mc/example_design/clk_10Mc_exdes.vhd 

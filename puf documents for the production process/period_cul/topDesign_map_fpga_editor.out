@@ -1,0 +1,40 @@
+#:C9     
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.20131013
+#Current Working Directory:
+#:D   D:\Xilinx\period_cul
+#Date/Time:
+#:T   Sat Oct 31 22:14:26 2015
+#------------------------------
+	#Reading topDesign_map.ncd...
+	#Loading device for application Rf_Device from file '7z020.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "topDesign" is an NCD, version 3.2, device xc7z020, package clg484, speed -1
+	#Loading device for application Rf_Device from file '7z020.nph' in environment C:\Xilinx\14.7\ISE_DS\ISE\.
+	#   "HM_ro" is an NCD, version 3.2, device xa7z020, package clg400, speed -1i
+	#Design creation date: 2015.10.28.15.11.43
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+unselect -all
+	#3
+select site 'TIEOFF_X71Y50'
+	#site "TIEOFF_X71Y50",  type = TIEOFF  (RPM grid X268Y100)
+	#4
+unselect -all
+	#5
+unselect -all
+	#6
+unselect -all
+	#7
+select hm 'ro_module_inst/roModule_inst'
+	#Hard Macro Inst "ro_module_inst/roModule_inst", type "HM_ro", refcomp "ro_module_inst/roModule_inst/LUT1_out"
+	#8
+unselect -all
+	#9
+select comp 'ro_module_inst/roModule_inst/LUT1_out'
+	#comp "ro_module_inst/roModule_inst/LUT1_out" in hard macro "ro_module_inst/roModule_inst",  site "SLICE_X51Y14",  type = SLICEL  (RPM grid X147Y28)
+	#10
+post block

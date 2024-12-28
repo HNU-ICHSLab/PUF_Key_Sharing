@@ -1,0 +1,8 @@
+vhdl work "ipcore_dir/clk_10Mc.vhd"
+vhdl work "roModule.vhd"
+vhdl work "roCounter.vhd"
+vhdl work "counterCompare.vhd"
+vhdl work "roDriver.vhd"
+vhdl work "RO.vhd"
+vhdl work "counterOutPut.vhd"
+vhdl work "topDesign.vhd"

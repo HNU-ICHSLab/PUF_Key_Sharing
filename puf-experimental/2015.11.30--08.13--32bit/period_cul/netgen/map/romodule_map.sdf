@@ -1,0 +1,166 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "roModule")
+  (DATE "Thu Jul 09 01:23:58 2015")
+  (VENDOR "Xilinx")
+  (PROGRAM "Xilinx SDF Writer")
+  (VERSION "P.49d")
+  (DIVIDER /)
+  (VOLTAGE 0.95)
+  (TEMPERATURE 100)
+  (TIMESCALE 1 ps)
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE roModule_inst\/roModule_inst\/LUT1_out\/roModule_inst\/LUT1_out_CMUX_Delay)
+      (DELAY
+        (PATHPULSE (50))
+        (ABSOLUTE
+          (IOPATH I O (63:174:174)(63:174:174))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_MUX2")
+    (INSTANCE roModule_inst\/MUXF7_inst1)
+      (DELAY
+        (ABSOLUTE
+          (PORT IA (9:21:21)(9:21:21))
+          (PORT IB (9:22:22)(9:22:22))
+          (PORT SEL ( 0 )( 0 ))
+          (IOPATH IA O (62:217:217)(62:217:217))
+          (IOPATH IB O (65:223:223)(65:223:223))
+          (IOPATH SEL O (93:296:296)(93:296:296))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT6")
+    (INSTANCE roModule_inst\/LUT_inst1)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR2 ( 0 )( 0 ))
+          (IOPATH ADR2 O (45:124:124)(45:124:124))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT6")
+    (INSTANCE roModule_inst\/LUT_inst3)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 ( 0 )( 0 ))
+          (IOPATH ADR0 O (45:124:124)(45:124:124))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT6")
+    (INSTANCE roModule_inst\/LUT_inst4)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR4 ( 0 )( 0 ))
+          (IOPATH ADR4 O (45:124:124)(45:124:124))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT6")
+    (INSTANCE roModule_inst\/LUT_inst2)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 ( 0 )( 0 ))
+          (IOPATH ADR0 O (45:124:124)(45:124:124))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE roModule_inst\/roModule_inst\/LUT5_out\/roModule_inst\/LUT5_out_CMUX_Delay)
+      (DELAY
+        (PATHPULSE (50))
+        (ABSOLUTE
+          (IOPATH I O (63:174:174)(63:174:174))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_MUX2")
+    (INSTANCE roModule_inst\/MUXF7_inst2)
+      (DELAY
+        (ABSOLUTE
+          (PORT IA (9:22:22)(9:22:22))
+          (PORT IB (9:22:22)(9:22:22))
+          (PORT SEL ( 0 )( 0 ))
+          (IOPATH IA O (64:219:219)(64:219:219))
+          (IOPATH IB O (66:225:225)(66:225:225))
+          (IOPATH SEL O (96:314:314)(96:314:314))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT6")
+    (INSTANCE roModule_inst\/LUT_inst5)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR2 ( 0 )( 0 ))
+          (IOPATH ADR2 O (45:124:124)(45:124:124))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT6")
+    (INSTANCE roModule_inst\/LUT_inst7)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 ( 0 )( 0 ))
+          (IOPATH ADR0 O (45:124:124)(45:124:124))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT6")
+    (INSTANCE roModule_inst\/LUT2_inst1)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR3 ( 0 )( 0 ))
+          (PORT ADR4 ( 0 )( 0 ))
+          (IOPATH ADR3 O (45:124:124)(45:124:124))
+          (IOPATH ADR4 O (45:124:124)(45:124:124))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT6")
+    (INSTANCE roModule_inst\/LUT_inst6)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 ( 0 )( 0 ))
+          (IOPATH ADR0 O (45:124:124)(45:124:124))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE roModuleOut_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O (1207:2691:2691)(1207:2691:2691))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_IBUF_INTERMDISABLE_TPWRGT")
+    (INSTANCE roModuleEna_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O (255:1027:1027)(255:1027:1027))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_IBUF_INTERMDISABLE_TPWRGT")
+    (INSTANCE roModuleConf0_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O (181:952:952)(181:952:952))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_IBUF_INTERMDISABLE_TPWRGT")
+    (INSTANCE roModuleConf1_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O (178:949:949)(178:949:949))
+        )
+      )
+  )
+)

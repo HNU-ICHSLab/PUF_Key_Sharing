@@ -1,0 +1,41 @@
+
+# PlanAhead Generated IO constraints 
+
+NET "sysout[7]" IOSTANDARD = LVCMOS33;
+NET "sysout[6]" IOSTANDARD = LVCMOS33;
+NET "sysout[5]" IOSTANDARD = LVCMOS33;
+NET "sysout[4]" IOSTANDARD = LVCMOS33;
+NET "sysout[3]" IOSTANDARD = LVCMOS33;
+NET "sysout[2]" IOSTANDARD = LVCMOS33;
+NET "sysout[1]" IOSTANDARD = LVCMOS33;
+NET "sysout[0]" IOSTANDARD = LVCMOS33;
+NET "sysSel[3]" IOSTANDARD = LVCMOS25;
+NET "sysSel[2]" IOSTANDARD = LVCMOS25;
+NET "sysSel[1]" IOSTANDARD = LVCMOS25;
+NET "sysSel[0]" IOSTANDARD = LVCMOS25;
+NET "sysClock" IOSTANDARD = LVCMOS33;
+NET "sysConf0" IOSTANDARD = LVCMOS25;
+NET "sysConf1" IOSTANDARD = LVCMOS25;
+NET "sysRst" IOSTANDARD = LVCMOS25;
+
+# PlanAhead Generated physical constraints 
+
+NET "sysRst" LOC = F22;
+NET "sysConf1" LOC = H17;
+NET "sysConf0" LOC = M15;
+NET "sysClock" LOC = Y9;
+NET "sysSel[0]" LOC = H19;
+NET "sysSel[1]" LOC = F21;
+NET "sysSel[2]" LOC = H22;
+NET "sysSel[3]" LOC = G22;
+NET "sysout[7]" LOC = U14;
+NET "sysout[6]" LOC = U19;
+NET "sysout[5]" LOC = W22;
+NET "sysout[4]" LOC = V22;
+NET "sysout[3]" LOC = U21;
+NET "sysout[2]" LOC = U22;
+NET "sysout[1]" LOC = T21;
+NET "sysout[0]" LOC = T22;
+
+
+INST "ro_module_inst/roModule_inst" loc = "SLICE_X51Y14";

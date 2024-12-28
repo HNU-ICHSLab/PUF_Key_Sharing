@@ -1,0 +1,57 @@
+#:C19    
+#Xilinx FPGA Editor Command Log File
+#Editor Version:
+#:V   NT M2.1 P.49d
+#Current Working Directory:
+#:D   F:\PUF\period_cul
+#Date/Time:
+#:T   Thu Jul 09 08:10:33 2015
+#------------------------------
+	#Reading topDesign.ncd...
+	#Loading device for application Rf_Device from file '7z020.nph' in environment f:\Xilinx\14.4\ISE_DS\ISE\.
+	#   "topDesign" is an NCD, version 3.2, device xc7z020, package clg484, speed -1
+	#Loading device for application Rf_Device from file '7z020.nph' in environment f:\Xilinx\14.4\ISE_DS\ISE\.
+	#   "HM_ro" is an NCD, version 3.2, device xa7z020, package clg400, speed -1i
+	#Design creation date: 2015.07.08.23.31.52
+	#Building chip graphics...
+	#Loading speed info...
+	#1
+setattr main edit-mode no-logic-changes
+	#2
+select -k comp 'counter_inst/countBuf[31]_PWR_12_o_equal_1_o<31>2'
+	#3
+unselect comp 'counter_inst/countBuf[31]_PWR_12_o_equal_1_o<31>2'
+	#4
+select -k comp 'counter_inst/Mcount_countBuf_cy<27>'
+	#5
+unselect comp 'counter_inst/Mcount_countBuf_cy<27>'
+	#6
+select -k comp 'ro_module_inst/roModule_inst/LUT1_out'
+	#7
+unselect -all
+	#8
+unselect -all
+	#9
+unselect -all
+	#10
+unselect -all
+	#11
+unselect -all
+	#12
+unselect -all
+	#13
+unselect -all
+	#14
+unselect -all
+	#15
+unselect -all
+	#16
+unselect -all
+	#17
+unselect -all
+	#18
+unselect -all
+	#19
+unselect -all
+	#20
+unselect -all

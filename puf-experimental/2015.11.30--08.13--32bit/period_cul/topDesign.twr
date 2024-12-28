@@ -1,0 +1,388 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
+-n 3 -fastpaths -xml topDesign.twx topDesign.ncd -o topDesign.twr topDesign.pcf
+-ucf topDesign.ucf
+
+Design file:              topDesign.ncd
+Physical constraint file: topDesign.pcf
+Device,package,speed:     xc7z010,clg400,C,-1 (PRODUCTION 1.08 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock sysClock
+------------+------------+------------+------------+------------+------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                  | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s) | Phase  |
+------------+------------+------------+------------+------------+------------------+--------+
+sysRst      |    8.442(R)|      SLOW  |   -3.501(R)|      FAST  |clk_to_driver     |   0.000|
+------------+------------+------------+------------+------------+------------------+--------+
+
+Setup/Hold to clock sysConf0
+------------+------------+------------+------------+------------+------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                              | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)             | Phase  |
+------------+------------+------------+------------+------------+------------------------------+--------+
+sysRst      |   -0.247(R)|      FAST  |    5.713(R)|      SLOW  |ro_inst_top/ro0_to_counter0   |   0.000|
+            |   -0.655(R)|      FAST  |    6.247(R)|      SLOW  |ro_inst_top/ro_to_counter     |   0.000|
+            |    0.183(R)|      FAST  |    4.738(R)|      SLOW  |ro_inst_top_1/ro0_to_counter0 |   0.000|
+            |    0.651(R)|      FAST  |    3.698(R)|      SLOW  |ro_inst_top_1/ro_to_counter   |   0.000|
+            |   -1.550(R)|      FAST  |    8.964(R)|      SLOW  |ro_inst_top_10/ro0_to_counter0|   0.000|
+            |   -0.487(R)|      FAST  |    8.233(R)|      SLOW  |ro_inst_top_10/ro_to_counter  |   0.000|
+            |   -1.474(R)|      FAST  |    8.983(R)|      SLOW  |ro_inst_top_11/ro0_to_counter0|   0.000|
+            |   -2.269(R)|      FAST  |   10.219(R)|      SLOW  |ro_inst_top_11/ro_to_counter  |   0.000|
+            |   -2.070(R)|      FAST  |    9.917(R)|      SLOW  |ro_inst_top_12/ro0_to_counter0|   0.000|
+            |   -2.578(R)|      FAST  |   10.147(R)|      SLOW  |ro_inst_top_12/ro_to_counter  |   0.000|
+            |   -2.210(R)|      FAST  |   10.275(R)|      SLOW  |ro_inst_top_13/ro0_to_counter0|   0.000|
+            |   -2.651(R)|      FAST  |   10.447(R)|      SLOW  |ro_inst_top_13/ro_to_counter  |   0.000|
+            |   -2.092(R)|      FAST  |   10.513(R)|      SLOW  |ro_inst_top_14/ro0_to_counter0|   0.000|
+            |   -2.574(R)|      FAST  |   10.444(R)|      SLOW  |ro_inst_top_14/ro_to_counter  |   0.000|
+            |   -2.612(R)|      FAST  |   10.927(R)|      SLOW  |ro_inst_top_15/ro0_to_counter0|   0.000|
+            |   -1.679(R)|      FAST  |    9.726(R)|      SLOW  |ro_inst_top_15/ro_to_counter  |   0.000|
+            |   -0.232(R)|      FAST  |    5.741(R)|      SLOW  |ro_inst_top_16/ro0_to_counter0|   0.000|
+            |   -0.683(R)|      FAST  |    6.853(R)|      SLOW  |ro_inst_top_16/ro_to_counter  |   0.000|
+            |    2.173(R)|      SLOW  |    2.225(R)|      SLOW  |ro_inst_top_17/ro0_to_counter0|   0.000|
+            |    1.911(R)|      SLOW  |    2.989(R)|      SLOW  |ro_inst_top_17/ro_to_counter  |   0.000|
+            |    0.172(R)|      FAST  |    5.850(R)|      SLOW  |ro_inst_top_18/ro0_to_counter0|   0.000|
+            |   -0.145(R)|      FAST  |    5.776(R)|      SLOW  |ro_inst_top_18/ro_to_counter  |   0.000|
+            |   -1.076(R)|      FAST  |    7.677(R)|      SLOW  |ro_inst_top_19/ro0_to_counter0|   0.000|
+            |   -0.508(R)|      FAST  |    6.125(R)|      SLOW  |ro_inst_top_19/ro_to_counter  |   0.000|
+            |   -1.880(R)|      FAST  |    8.948(R)|      SLOW  |ro_inst_top_2/ro0_to_counter0 |   0.000|
+            |   -1.381(R)|      FAST  |    8.044(R)|      SLOW  |ro_inst_top_2/ro_to_counter   |   0.000|
+            |    0.695(R)|      FAST  |    4.279(R)|      SLOW  |ro_inst_top_20/ro0_to_counter0|   0.000|
+            |    0.681(R)|      FAST  |    4.113(R)|      SLOW  |ro_inst_top_20/ro_to_counter  |   0.000|
+            |    1.444(R)|      SLOW  |    4.064(R)|      SLOW  |ro_inst_top_21/ro0_to_counter0|   0.000|
+            |    2.394(R)|      SLOW  |    3.450(R)|      SLOW  |ro_inst_top_21/ro_to_counter  |   0.000|
+            |   -0.760(R)|      FAST  |    7.483(R)|      SLOW  |ro_inst_top_22/ro0_to_counter0|   0.000|
+            |   -0.603(R)|      FAST  |    6.908(R)|      SLOW  |ro_inst_top_22/ro_to_counter  |   0.000|
+            |   -1.601(R)|      FAST  |    8.644(R)|      SLOW  |ro_inst_top_23/ro0_to_counter0|   0.000|
+            |   -0.993(R)|      FAST  |    7.985(R)|      SLOW  |ro_inst_top_23/ro_to_counter  |   0.000|
+            |    0.509(R)|      FAST  |    5.515(R)|      SLOW  |ro_inst_top_24/ro0_to_counter0|   0.000|
+            |    0.812(R)|      FAST  |    7.411(R)|      SLOW  |ro_inst_top_24/ro_to_counter  |   0.000|
+            |   -0.767(R)|      FAST  |    7.886(R)|      SLOW  |ro_inst_top_25/ro0_to_counter0|   0.000|
+            |   -0.128(R)|      FAST  |    6.599(R)|      SLOW  |ro_inst_top_25/ro_to_counter  |   0.000|
+            |   -0.605(R)|      FAST  |    7.717(R)|      SLOW  |ro_inst_top_26/ro0_to_counter0|   0.000|
+            |   -0.692(R)|      FAST  |    7.495(R)|      SLOW  |ro_inst_top_26/ro_to_counter  |   0.000|
+            |   -0.485(R)|      FAST  |    8.089(R)|      SLOW  |ro_inst_top_27/ro0_to_counter0|   0.000|
+            |   -1.371(R)|      FAST  |    8.711(R)|      SLOW  |ro_inst_top_27/ro_to_counter  |   0.000|
+            |   -0.824(R)|      FAST  |    8.282(R)|      SLOW  |ro_inst_top_28/ro0_to_counter0|   0.000|
+            |   -0.679(R)|      FAST  |    7.838(R)|      SLOW  |ro_inst_top_28/ro_to_counter  |   0.000|
+            |   -1.104(R)|      FAST  |    8.432(R)|      SLOW  |ro_inst_top_29/ro0_to_counter0|   0.000|
+            |   -1.238(R)|      FAST  |    9.024(R)|      SLOW  |ro_inst_top_29/ro_to_counter  |   0.000|
+            |   -1.980(R)|      FAST  |    8.198(R)|      SLOW  |ro_inst_top_3/ro0_to_counter0 |   0.000|
+            |   -1.049(R)|      FAST  |    7.420(R)|      SLOW  |ro_inst_top_3/ro_to_counter   |   0.000|
+            |   -2.017(R)|      FAST  |   10.189(R)|      SLOW  |ro_inst_top_30/ro0_to_counter0|   0.000|
+            |   -1.908(R)|      FAST  |   10.426(R)|      SLOW  |ro_inst_top_30/ro_to_counter  |   0.000|
+            |   -0.904(R)|      FAST  |    8.443(R)|      SLOW  |ro_inst_top_31/ro0_to_counter0|   0.000|
+            |   -0.474(R)|      FAST  |    8.488(R)|      SLOW  |ro_inst_top_31/ro_to_counter  |   0.000|
+            |   -1.176(R)|      FAST  |    7.372(R)|      SLOW  |ro_inst_top_4/ro0_to_counter0 |   0.000|
+            |   -0.794(R)|      FAST  |    6.953(R)|      SLOW  |ro_inst_top_4/ro_to_counter   |   0.000|
+            |   -0.216(R)|      FAST  |    6.097(R)|      SLOW  |ro_inst_top_5/ro0_to_counter0 |   0.000|
+            |   -0.405(R)|      FAST  |    6.539(R)|      SLOW  |ro_inst_top_5/ro_to_counter   |   0.000|
+            |   -1.853(R)|      FAST  |    9.153(R)|      SLOW  |ro_inst_top_6/ro0_to_counter0 |   0.000|
+            |   -2.269(R)|      FAST  |    9.076(R)|      SLOW  |ro_inst_top_6/ro_to_counter   |   0.000|
+            |   -1.855(R)|      FAST  |    9.086(R)|      SLOW  |ro_inst_top_7/ro0_to_counter0 |   0.000|
+            |   -2.140(R)|      FAST  |    9.316(R)|      SLOW  |ro_inst_top_7/ro_to_counter   |   0.000|
+            |   -1.138(R)|      FAST  |    7.647(R)|      SLOW  |ro_inst_top_8/ro0_to_counter0 |   0.000|
+            |   -0.981(R)|      FAST  |    8.564(R)|      SLOW  |ro_inst_top_8/ro_to_counter   |   0.000|
+            |   -1.123(R)|      FAST  |    8.117(R)|      SLOW  |ro_inst_top_9/ro0_to_counter0 |   0.000|
+            |   -1.755(R)|      FAST  |    9.106(R)|      SLOW  |ro_inst_top_9/ro_to_counter   |   0.000|
+------------+------------+------------+------------+------------+------------------------------+--------+
+
+Setup/Hold to clock sysConf1
+------------+------------+------------+------------+------------+------------------------------+--------+
+            |Max Setup to|  Process   |Max Hold to |  Process   |                              | Clock  |
+Source      | clk (edge) |   Corner   | clk (edge) |   Corner   |Internal Clock(s)             | Phase  |
+------------+------------+------------+------------+------------+------------------------------+--------+
+sysRst      |    0.154(R)|      FAST  |    2.718(R)|      SLOW  |ro_inst_top/ro0_to_counter0   |   0.000|
+            |   -0.134(R)|      FAST  |    2.959(R)|      SLOW  |ro_inst_top/ro_to_counter     |   0.000|
+            |    0.823(R)|      SLOW  |    1.567(R)|      SLOW  |ro_inst_top_1/ro0_to_counter0 |   0.000|
+            |    1.489(R)|      SLOW  |    0.853(R)|      SLOW  |ro_inst_top_1/ro_to_counter   |   0.000|
+            |   -0.701(R)|      FAST  |    4.753(R)|      SLOW  |ro_inst_top_10/ro0_to_counter0|   0.000|
+            |    0.428(R)|      FAST  |    3.828(R)|      SLOW  |ro_inst_top_10/ro_to_counter  |   0.000|
+            |   -0.575(R)|      FAST  |    4.635(R)|      SLOW  |ro_inst_top_11/ro0_to_counter0|   0.000|
+            |   -1.305(R)|      FAST  |    5.678(R)|      SLOW  |ro_inst_top_11/ro_to_counter  |   0.000|
+            |   -1.121(R)|      FAST  |    5.432(R)|      SLOW  |ro_inst_top_12/ro0_to_counter0|   0.000|
+            |   -1.563(R)|      FAST  |    5.468(R)|      SLOW  |ro_inst_top_12/ro_to_counter  |   0.000|
+            |   -1.210(R)|      FAST  |    5.652(R)|      SLOW  |ro_inst_top_13/ro0_to_counter0|   0.000|
+            |   -1.586(R)|      FAST  |    5.631(R)|      SLOW  |ro_inst_top_13/ro_to_counter  |   0.000|
+            |   -1.042(R)|      FAST  |    5.753(R)|      SLOW  |ro_inst_top_14/ro0_to_counter0|   0.000|
+            |   -1.458(R)|      FAST  |    5.490(R)|      SLOW  |ro_inst_top_14/ro_to_counter  |   0.000|
+            |   -1.512(R)|      FAST  |    6.030(R)|      SLOW  |ro_inst_top_15/ro0_to_counter0|   0.000|
+            |   -0.504(R)|      FAST  |    4.626(R)|      SLOW  |ro_inst_top_15/ro_to_counter  |   0.000|
+            |    0.234(R)|      FAST  |    2.608(R)|      SLOW  |ro_inst_top_16/ro0_to_counter0|   0.000|
+            |   -0.269(R)|      FAST  |    3.860(R)|      SLOW  |ro_inst_top_16/ro_to_counter  |   0.000|
+            |    3.432(R)|      SLOW  |   -0.823(R)|      FAST  |ro_inst_top_17/ro0_to_counter0|   0.000|
+            |    3.053(R)|      SLOW  |   -0.096(R)|      FAST  |ro_inst_top_17/ro_to_counter  |   0.000|
+            |    0.984(R)|      SLOW  |    2.443(R)|      SLOW  |ro_inst_top_18/ro0_to_counter0|   0.000|
+            |    0.370(R)|      FAST  |    2.508(R)|      SLOW  |ro_inst_top_18/ro_to_counter  |   0.000|
+            |   -0.459(R)|      FAST  |    4.132(R)|      SLOW  |ro_inst_top_19/ro0_to_counter0|   0.000|
+            |    0.057(R)|      FAST  |    2.720(R)|      SLOW  |ro_inst_top_19/ro_to_counter  |   0.000|
+            |   -1.365(R)|      FAST  |    5.640(R)|      SLOW  |ro_inst_top_2/ro0_to_counter0 |   0.000|
+            |   -0.865(R)|      FAST  |    4.734(R)|      SLOW  |ro_inst_top_2/ro_to_counter   |   0.000|
+            |    1.951(R)|      SLOW  |    0.597(R)|      SLOW  |ro_inst_top_20/ro0_to_counter0|   0.000|
+            |    1.845(R)|      SLOW  |    0.571(R)|      SLOW  |ro_inst_top_20/ro_to_counter  |   0.000|
+            |    3.159(R)|      SLOW  |    0.245(R)|      SLOW  |ro_inst_top_21/ro0_to_counter0|   0.000|
+            |    3.993(R)|      SLOW  |   -0.230(R)|      SLOW  |ro_inst_top_21/ro_to_counter  |   0.000|
+            |    0.007(R)|      FAST  |    3.527(R)|      SLOW  |ro_inst_top_22/ro0_to_counter0|   0.000|
+            |    0.113(R)|      FAST  |    3.091(R)|      SLOW  |ro_inst_top_22/ro_to_counter  |   0.000|
+            |   -0.787(R)|      FAST  |    4.554(R)|      SLOW  |ro_inst_top_23/ro0_to_counter0|   0.000|
+            |   -0.228(R)|      FAST  |    4.032(R)|      SLOW  |ro_inst_top_23/ro_to_counter  |   0.000|
+            |    1.757(R)|      SLOW  |    1.288(R)|      SLOW  |ro_inst_top_24/ro0_to_counter0|   0.000|
+            |    2.166(R)|      SLOW  |    3.514(R)|      SLOW  |ro_inst_top_24/ro_to_counter  |   0.000|
+            |    0.148(R)|      FAST  |    3.521(R)|      SLOW  |ro_inst_top_25/ro0_to_counter0|   0.000|
+            |    0.671(R)|      FAST  |    2.565(R)|      SLOW  |ro_inst_top_25/ro_to_counter  |   0.000|
+            |    0.359(R)|      FAST  |    3.216(R)|      SLOW  |ro_inst_top_26/ro0_to_counter0|   0.000|
+            |    0.158(R)|      FAST  |    3.323(R)|      SLOW  |ro_inst_top_26/ro_to_counter  |   0.000|
+            |    0.530(R)|      FAST  |    3.450(R)|      SLOW  |ro_inst_top_27/ro0_to_counter0|   0.000|
+            |   -0.472(R)|      FAST  |    4.403(R)|      SLOW  |ro_inst_top_27/ro_to_counter  |   0.000|
+            |    0.241(R)|      FAST  |    3.506(R)|      SLOW  |ro_inst_top_28/ro0_to_counter0|   0.000|
+            |    0.271(R)|      FAST  |    3.392(R)|      SLOW  |ro_inst_top_28/ro_to_counter  |   0.000|
+            |    0.012(R)|      FAST  |    3.518(R)|      SLOW  |ro_inst_top_29/ro0_to_counter0|   0.000|
+            |   -0.238(R)|      FAST  |    4.441(R)|      SLOW  |ro_inst_top_29/ro_to_counter  |   0.000|
+            |   -1.415(R)|      FAST  |    4.753(R)|      SLOW  |ro_inst_top_3/ro0_to_counter0 |   0.000|
+            |   -0.483(R)|      FAST  |    3.973(R)|      SLOW  |ro_inst_top_3/ro_to_counter   |   0.000|
+            |   -0.853(R)|      FAST  |    5.140(R)|      SLOW  |ro_inst_top_30/ro0_to_counter0|   0.000|
+            |   -0.857(R)|      FAST  |    5.705(R)|      SLOW  |ro_inst_top_30/ro_to_counter  |   0.000|
+            |    0.321(R)|      FAST  |    3.246(R)|      SLOW  |ro_inst_top_31/ro0_to_counter0|   0.000|
+            |    0.636(R)|      FAST  |    3.621(R)|      SLOW  |ro_inst_top_31/ro_to_counter  |   0.000|
+            |   -0.561(R)|      FAST  |    3.790(R)|      SLOW  |ro_inst_top_4/ro0_to_counter0 |   0.000|
+            |   -0.178(R)|      FAST  |    3.369(R)|      SLOW  |ro_inst_top_4/ro_to_counter   |   0.000|
+            |    0.554(R)|      SLOW  |    2.377(R)|      SLOW  |ro_inst_top_5/ro0_to_counter0 |   0.000|
+            |    0.262(R)|      FAST  |    2.817(R)|      SLOW  |ro_inst_top_5/ro_to_counter   |   0.000|
+            |   -1.137(R)|      FAST  |    5.296(R)|      SLOW  |ro_inst_top_6/ro0_to_counter0 |   0.000|
+            |   -1.553(R)|      FAST  |    5.218(R)|      SLOW  |ro_inst_top_6/ro_to_counter   |   0.000|
+            |   -1.079(R)|      FAST  |    5.082(R)|      SLOW  |ro_inst_top_7/ro0_to_counter0 |   0.000|
+            |   -1.373(R)|      FAST  |    5.320(R)|      SLOW  |ro_inst_top_7/ro_to_counter   |   0.000|
+            |   -0.390(R)|      FAST  |    3.711(R)|      SLOW  |ro_inst_top_8/ro0_to_counter0 |   0.000|
+            |   -0.164(R)|      FAST  |    4.431(R)|      SLOW  |ro_inst_top_8/ro_to_counter   |   0.000|
+            |   -0.324(R)|      FAST  |    4.043(R)|      SLOW  |ro_inst_top_9/ro0_to_counter0 |   0.000|
+            |   -0.891(R)|      FAST  |    4.839(R)|      SLOW  |ro_inst_top_9/ro_to_counter   |   0.000|
+------------+------------+------------+------------+------------+------------------------------+--------+
+
+Clock sysConf0 to Pad
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                              | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)             | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+sysout<0>   |        22.404(R)|      SLOW  |         5.871(R)|      FAST  |ro_inst_top/ro0_to_counter0   |   0.000|
+            |        22.702(R)|      SLOW  |         6.265(R)|      FAST  |ro_inst_top/ro_to_counter     |   0.000|
+            |        24.867(R)|      SLOW  |         6.851(R)|      FAST  |ro_inst_top_12/ro0_to_counter0|   0.000|
+            |        24.862(R)|      SLOW  |         7.203(R)|      FAST  |ro_inst_top_12/ro_to_counter  |   0.000|
+            |        22.679(R)|      SLOW  |         6.223(R)|      FAST  |ro_inst_top_16/ro0_to_counter0|   0.000|
+            |        23.340(R)|      SLOW  |         6.669(R)|      FAST  |ro_inst_top_16/ro_to_counter  |   0.000|
+            |        23.785(R)|      SLOW  |         6.807(R)|      FAST  |ro_inst_top_20/ro0_to_counter0|   0.000|
+            |        23.673(R)|      SLOW  |         6.681(R)|      FAST  |ro_inst_top_20/ro_to_counter  |   0.000|
+            |        28.102(R)|      SLOW  |         8.590(R)|      FAST  |ro_inst_top_24/ro0_to_counter0|   0.000|
+            |        28.215(R)|      SLOW  |         8.519(R)|      FAST  |ro_inst_top_24/ro_to_counter  |   0.000|
+            |        27.632(R)|      SLOW  |         8.535(R)|      FAST  |ro_inst_top_28/ro0_to_counter0|   0.000|
+            |        26.418(R)|      SLOW  |         7.963(R)|      FAST  |ro_inst_top_28/ro_to_counter  |   0.000|
+            |        23.692(R)|      SLOW  |         6.793(R)|      FAST  |ro_inst_top_4/ro0_to_counter0 |   0.000|
+            |        23.436(R)|      SLOW  |         6.288(R)|      FAST  |ro_inst_top_4/ro_to_counter   |   0.000|
+            |        25.649(R)|      SLOW  |         7.619(R)|      FAST  |ro_inst_top_8/ro0_to_counter0 |   0.000|
+            |        25.871(R)|      SLOW  |         7.581(R)|      FAST  |ro_inst_top_8/ro_to_counter   |   0.000|
+sysout<1>   |        21.838(R)|      SLOW  |         6.110(R)|      FAST  |ro_inst_top_1/ro0_to_counter0 |   0.000|
+            |        21.009(R)|      SLOW  |         5.768(R)|      FAST  |ro_inst_top_1/ro_to_counter   |   0.000|
+            |        25.436(R)|      SLOW  |         7.422(R)|      FAST  |ro_inst_top_13/ro0_to_counter0|   0.000|
+            |        25.347(R)|      SLOW  |         7.583(R)|      FAST  |ro_inst_top_13/ro_to_counter  |   0.000|
+            |        23.352(R)|      SLOW  |         6.438(R)|      FAST  |ro_inst_top_17/ro0_to_counter0|   0.000|
+            |        23.991(R)|      SLOW  |         6.537(R)|      FAST  |ro_inst_top_17/ro_to_counter  |   0.000|
+            |        25.085(R)|      SLOW  |         7.513(R)|      FAST  |ro_inst_top_21/ro0_to_counter0|   0.000|
+            |        24.957(R)|      SLOW  |         7.053(R)|      FAST  |ro_inst_top_21/ro_to_counter  |   0.000|
+            |        27.755(R)|      SLOW  |         8.481(R)|      FAST  |ro_inst_top_25/ro0_to_counter0|   0.000|
+            |        27.455(R)|      SLOW  |         8.512(R)|      FAST  |ro_inst_top_25/ro_to_counter  |   0.000|
+            |        27.038(R)|      SLOW  |         8.146(R)|      FAST  |ro_inst_top_29/ro0_to_counter0|   0.000|
+            |        26.726(R)|      SLOW  |         7.955(R)|      FAST  |ro_inst_top_29/ro_to_counter  |   0.000|
+            |        23.534(R)|      SLOW  |         6.665(R)|      FAST  |ro_inst_top_5/ro0_to_counter0 |   0.000|
+            |        23.412(R)|      SLOW  |         6.633(R)|      FAST  |ro_inst_top_5/ro_to_counter   |   0.000|
+            |        26.044(R)|      SLOW  |         7.890(R)|      FAST  |ro_inst_top_9/ro0_to_counter0 |   0.000|
+            |        26.751(R)|      SLOW  |         7.902(R)|      FAST  |ro_inst_top_9/ro_to_counter   |   0.000|
+sysout<2>   |        28.556(R)|      SLOW  |         8.716(R)|      FAST  |ro_inst_top_10/ro0_to_counter0|   0.000|
+            |        28.858(R)|      SLOW  |         8.709(R)|      FAST  |ro_inst_top_10/ro_to_counter  |   0.000|
+            |        26.020(R)|      SLOW  |         7.848(R)|      FAST  |ro_inst_top_14/ro0_to_counter0|   0.000|
+            |        25.743(R)|      SLOW  |         8.064(R)|      FAST  |ro_inst_top_14/ro_to_counter  |   0.000|
+            |        25.248(R)|      SLOW  |         7.031(R)|      FAST  |ro_inst_top_18/ro0_to_counter0|   0.000|
+            |        24.927(R)|      SLOW  |         7.276(R)|      FAST  |ro_inst_top_18/ro_to_counter  |   0.000|
+            |        24.786(R)|      SLOW  |         7.095(R)|      FAST  |ro_inst_top_2/ro0_to_counter0 |   0.000|
+            |        24.456(R)|      SLOW  |         6.757(R)|      FAST  |ro_inst_top_2/ro_to_counter   |   0.000|
+            |        25.339(R)|      SLOW  |         7.110(R)|      FAST  |ro_inst_top_22/ro0_to_counter0|   0.000|
+            |        24.970(R)|      SLOW  |         7.189(R)|      FAST  |ro_inst_top_22/ro_to_counter  |   0.000|
+            |        29.009(R)|      SLOW  |         8.909(R)|      FAST  |ro_inst_top_26/ro0_to_counter0|   0.000|
+            |        28.517(R)|      SLOW  |         8.711(R)|      FAST  |ro_inst_top_26/ro_to_counter  |   0.000|
+            |        28.070(R)|      SLOW  |         8.518(R)|      FAST  |ro_inst_top_30/ro0_to_counter0|   0.000|
+            |        28.737(R)|      SLOW  |         8.606(R)|      FAST  |ro_inst_top_30/ro_to_counter  |   0.000|
+            |        24.974(R)|      SLOW  |         7.218(R)|      FAST  |ro_inst_top_6/ro0_to_counter0 |   0.000|
+            |        24.730(R)|      SLOW  |         7.268(R)|      FAST  |ro_inst_top_6/ro_to_counter   |   0.000|
+sysout<3>   |        25.750(R)|      SLOW  |         7.754(R)|      FAST  |ro_inst_top_11/ro0_to_counter0|   0.000|
+            |        26.601(R)|      SLOW  |         7.928(R)|      FAST  |ro_inst_top_11/ro_to_counter  |   0.000|
+            |        27.825(R)|      SLOW  |         8.653(R)|      FAST  |ro_inst_top_15/ro0_to_counter0|   0.000|
+            |        27.603(R)|      SLOW  |         8.328(R)|      FAST  |ro_inst_top_15/ro_to_counter  |   0.000|
+            |        23.927(R)|      SLOW  |         6.953(R)|      FAST  |ro_inst_top_19/ro0_to_counter0|   0.000|
+            |        23.389(R)|      SLOW  |         6.538(R)|      FAST  |ro_inst_top_19/ro_to_counter  |   0.000|
+            |        25.040(R)|      SLOW  |         7.315(R)|      FAST  |ro_inst_top_23/ro0_to_counter0|   0.000|
+            |        25.172(R)|      SLOW  |         7.069(R)|      FAST  |ro_inst_top_23/ro_to_counter  |   0.000|
+            |        25.916(R)|      SLOW  |         7.924(R)|      FAST  |ro_inst_top_27/ro0_to_counter0|   0.000|
+            |        26.149(R)|      SLOW  |         7.882(R)|      FAST  |ro_inst_top_27/ro_to_counter  |   0.000|
+            |        24.981(R)|      SLOW  |         7.490(R)|      FAST  |ro_inst_top_3/ro0_to_counter0 |   0.000|
+            |        24.876(R)|      SLOW  |         7.195(R)|      FAST  |ro_inst_top_3/ro_to_counter   |   0.000|
+            |        28.648(R)|      SLOW  |         8.873(R)|      FAST  |ro_inst_top_31/ro0_to_counter0|   0.000|
+            |        27.911(R)|      SLOW  |         8.377(R)|      FAST  |ro_inst_top_31/ro_to_counter  |   0.000|
+            |        24.579(R)|      SLOW  |         7.367(R)|      FAST  |ro_inst_top_7/ro0_to_counter0 |   0.000|
+            |        24.653(R)|      SLOW  |         7.143(R)|      FAST  |ro_inst_top_7/ro_to_counter   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+
+Clock sysConf1 to Pad
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+            |Max (slowest) clk|  Process   |Min (fastest) clk|  Process   |                              | Clock  |
+Destination |  (edge) to PAD  |   Corner   |  (edge) to PAD  |   Corner   |Internal Clock(s)             | Phase  |
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+sysout<0>   |        19.409(R)|      SLOW  |         5.470(R)|      FAST  |ro_inst_top/ro0_to_counter0   |   0.000|
+            |        19.414(R)|      SLOW  |         5.744(R)|      FAST  |ro_inst_top/ro_to_counter     |   0.000|
+            |        20.382(R)|      SLOW  |         5.902(R)|      FAST  |ro_inst_top_12/ro0_to_counter0|   0.000|
+            |        20.183(R)|      SLOW  |         6.188(R)|      FAST  |ro_inst_top_12/ro_to_counter  |   0.000|
+            |        19.546(R)|      SLOW  |         5.757(R)|      FAST  |ro_inst_top_16/ro0_to_counter0|   0.000|
+            |        20.347(R)|      SLOW  |         6.255(R)|      FAST  |ro_inst_top_16/ro_to_counter  |   0.000|
+            |        20.103(R)|      SLOW  |         6.140(R)|      FAST  |ro_inst_top_20/ro0_to_counter0|   0.000|
+            |        20.131(R)|      SLOW  |         6.066(R)|      FAST  |ro_inst_top_20/ro_to_counter  |   0.000|
+            |        23.875(R)|      SLOW  |         7.726(R)|      FAST  |ro_inst_top_24/ro0_to_counter0|   0.000|
+            |        24.318(R)|      SLOW  |         7.770(R)|      FAST  |ro_inst_top_24/ro_to_counter  |   0.000|
+            |        22.856(R)|      SLOW  |         7.470(R)|      FAST  |ro_inst_top_28/ro0_to_counter0|   0.000|
+            |        21.972(R)|      SLOW  |         7.013(R)|      FAST  |ro_inst_top_28/ro_to_counter  |   0.000|
+            |        20.110(R)|      SLOW  |         6.178(R)|      FAST  |ro_inst_top_4/ro0_to_counter0 |   0.000|
+            |        19.852(R)|      SLOW  |         5.672(R)|      FAST  |ro_inst_top_4/ro_to_counter   |   0.000|
+            |        21.713(R)|      SLOW  |         6.871(R)|      FAST  |ro_inst_top_8/ro0_to_counter0 |   0.000|
+            |        21.738(R)|      SLOW  |         6.764(R)|      FAST  |ro_inst_top_8/ro_to_counter   |   0.000|
+sysout<1>   |        18.667(R)|      SLOW  |         5.645(R)|      FAST  |ro_inst_top_1/ro0_to_counter0 |   0.000|
+            |        18.164(R)|      SLOW  |         5.433(R)|      FAST  |ro_inst_top_1/ro_to_counter   |   0.000|
+            |        20.813(R)|      SLOW  |         6.422(R)|      FAST  |ro_inst_top_13/ro0_to_counter0|   0.000|
+            |        20.531(R)|      SLOW  |         6.518(R)|      FAST  |ro_inst_top_13/ro_to_counter  |   0.000|
+            |        20.081(R)|      SLOW  |         5.921(R)|      FAST  |ro_inst_top_17/ro0_to_counter0|   0.000|
+            |        20.860(R)|      SLOW  |         6.072(R)|      FAST  |ro_inst_top_17/ro_to_counter  |   0.000|
+            |        21.266(R)|      SLOW  |         6.796(R)|      FAST  |ro_inst_top_21/ro0_to_counter0|   0.000|
+            |        21.277(R)|      SLOW  |         6.387(R)|      FAST  |ro_inst_top_21/ro_to_counter  |   0.000|
+            |        23.390(R)|      SLOW  |         7.566(R)|      FAST  |ro_inst_top_25/ro0_to_counter0|   0.000|
+            |        23.421(R)|      SLOW  |         7.713(R)|      FAST  |ro_inst_top_25/ro_to_counter  |   0.000|
+            |        22.124(R)|      SLOW  |         7.030(R)|      FAST  |ro_inst_top_29/ro0_to_counter0|   0.000|
+            |        22.143(R)|      SLOW  |         6.955(R)|      FAST  |ro_inst_top_29/ro_to_counter  |   0.000|
+            |        19.814(R)|      SLOW  |         5.999(R)|      FAST  |ro_inst_top_5/ro0_to_counter0 |   0.000|
+            |        19.690(R)|      SLOW  |         5.966(R)|      FAST  |ro_inst_top_5/ro_to_counter   |   0.000|
+            |        21.970(R)|      SLOW  |         7.091(R)|      FAST  |ro_inst_top_9/ro0_to_counter0 |   0.000|
+            |        22.484(R)|      SLOW  |         7.038(R)|      FAST  |ro_inst_top_9/ro_to_counter   |   0.000|
+sysout<2>   |        24.345(R)|      SLOW  |         7.867(R)|      FAST  |ro_inst_top_10/ro0_to_counter0|   0.000|
+            |        24.453(R)|      SLOW  |         7.794(R)|      FAST  |ro_inst_top_10/ro_to_counter  |   0.000|
+            |        21.260(R)|      SLOW  |         6.798(R)|      FAST  |ro_inst_top_14/ro0_to_counter0|   0.000|
+            |        20.789(R)|      SLOW  |         6.948(R)|      FAST  |ro_inst_top_14/ro_to_counter  |   0.000|
+            |        21.841(R)|      SLOW  |         6.465(R)|      FAST  |ro_inst_top_18/ro0_to_counter0|   0.000|
+            |        21.659(R)|      SLOW  |         6.761(R)|      FAST  |ro_inst_top_18/ro_to_counter  |   0.000|
+            |        21.478(R)|      SLOW  |         6.580(R)|      FAST  |ro_inst_top_2/ro0_to_counter0 |   0.000|
+            |        21.146(R)|      SLOW  |         6.241(R)|      FAST  |ro_inst_top_2/ro_to_counter   |   0.000|
+            |        21.383(R)|      SLOW  |         6.343(R)|      FAST  |ro_inst_top_22/ro0_to_counter0|   0.000|
+            |        21.153(R)|      SLOW  |         6.473(R)|      FAST  |ro_inst_top_22/ro_to_counter  |   0.000|
+            |        24.508(R)|      SLOW  |         7.945(R)|      FAST  |ro_inst_top_26/ro0_to_counter0|   0.000|
+            |        24.345(R)|      SLOW  |         7.861(R)|      FAST  |ro_inst_top_26/ro_to_counter  |   0.000|
+            |        23.021(R)|      SLOW  |         7.354(R)|      FAST  |ro_inst_top_30/ro0_to_counter0|   0.000|
+            |        24.016(R)|      SLOW  |         7.555(R)|      FAST  |ro_inst_top_30/ro_to_counter  |   0.000|
+            |        21.117(R)|      SLOW  |         6.502(R)|      FAST  |ro_inst_top_6/ro0_to_counter0 |   0.000|
+            |        20.872(R)|      SLOW  |         6.552(R)|      FAST  |ro_inst_top_6/ro_to_counter   |   0.000|
+sysout<3>   |        21.402(R)|      SLOW  |         6.855(R)|      FAST  |ro_inst_top_11/ro0_to_counter0|   0.000|
+            |        22.060(R)|      SLOW  |         6.964(R)|      FAST  |ro_inst_top_11/ro_to_counter  |   0.000|
+            |        22.928(R)|      SLOW  |         7.553(R)|      FAST  |ro_inst_top_15/ro0_to_counter0|   0.000|
+            |        22.503(R)|      SLOW  |         7.153(R)|      FAST  |ro_inst_top_15/ro_to_counter  |   0.000|
+            |        20.382(R)|      SLOW  |         6.336(R)|      FAST  |ro_inst_top_19/ro0_to_counter0|   0.000|
+            |        19.984(R)|      SLOW  |         5.973(R)|      FAST  |ro_inst_top_19/ro_to_counter  |   0.000|
+            |        20.950(R)|      SLOW  |         6.501(R)|      FAST  |ro_inst_top_23/ro0_to_counter0|   0.000|
+            |        21.219(R)|      SLOW  |         6.304(R)|      FAST  |ro_inst_top_23/ro_to_counter  |   0.000|
+            |        21.277(R)|      SLOW  |         6.909(R)|      FAST  |ro_inst_top_27/ro0_to_counter0|   0.000|
+            |        21.841(R)|      SLOW  |         6.983(R)|      FAST  |ro_inst_top_27/ro_to_counter  |   0.000|
+            |        21.536(R)|      SLOW  |         6.925(R)|      FAST  |ro_inst_top_3/ro0_to_counter0 |   0.000|
+            |        21.429(R)|      SLOW  |         6.629(R)|      FAST  |ro_inst_top_3/ro_to_counter   |   0.000|
+            |        23.451(R)|      SLOW  |         7.648(R)|      FAST  |ro_inst_top_31/ro0_to_counter0|   0.000|
+            |        23.044(R)|      SLOW  |         7.267(R)|      FAST  |ro_inst_top_31/ro_to_counter  |   0.000|
+            |        20.575(R)|      SLOW  |         6.591(R)|      FAST  |ro_inst_top_7/ro0_to_counter0 |   0.000|
+            |        20.657(R)|      SLOW  |         6.376(R)|      FAST  |ro_inst_top_7/ro_to_counter   |   0.000|
+------------+-----------------+------------+-----------------+------------+------------------------------+--------+
+
+Clock to Setup on destination clock sysClock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sysClock       |    3.463|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sysConf0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sysClock       |    0.271|         |         |         |
+sysConf0       |    4.701|         |         |         |
+sysConf1       |    4.701|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock sysConf1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sysClock       |    0.271|         |         |         |
+sysConf0       |    4.701|         |         |         |
+sysConf1       |    4.701|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+sysSel<0>      |sysout<0>      |    9.042|
+sysSel<0>      |sysout<1>      |    9.767|
+sysSel<0>      |sysout<2>      |   11.415|
+sysSel<0>      |sysout<3>      |   10.963|
+sysSel<1>      |sysout<0>      |   11.722|
+sysSel<1>      |sysout<1>      |   12.114|
+sysSel<1>      |sysout<2>      |   13.212|
+sysSel<1>      |sysout<3>      |   12.162|
+sysSel<2>      |sysout<0>      |   12.533|
+sysSel<2>      |sysout<1>      |   12.364|
+sysSel<2>      |sysout<2>      |   12.625|
+sysSel<2>      |sysout<3>      |   12.536|
+sysSel<3>      |sysout<0>      |    9.490|
+sysSel<3>      |sysout<1>      |   10.449|
+sysSel<3>      |sysout<2>      |   12.236|
+sysSel<3>      |sysout<3>      |   11.742|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Nov 30 08:09:51 2015 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 885 MB
+
+
+

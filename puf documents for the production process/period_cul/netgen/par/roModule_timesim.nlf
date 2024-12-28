@@ -1,0 +1,31 @@
+Release 14.4 - netgen P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -s 1I -pcf roModule.pcf -sdf_anno true
+-sdf_path netgen/par -insert_glbl true -insert_pp_buffers true -w -dir
+netgen/par -ofmt verilog -sim roModule.ncd roModule_timesim.v  
+
+Read and Annotate design 'roModule.ncd' ...
+Loading device for application Rf_Device from file '7z020.nph' in environment
+f:\Xilinx\14.4\ISE_DS\ISE\.
+   "roModule" is an NCD, version 3.2, device xa7z020, package clg400, speed -1i
+   "HM_ro" is an NCD, version 3.2, device xa7z020, package clg400, speed -1i
+Loading constraints from 'roModule.pcf'...
+The speed grade (-1I) differs from the speed grade specified in the .ncd file
+(-1I).
+The number of routable networks is 11
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing Verilog SDF file 'netgen\par\romodule_timesim.sdf' ...
+Writing Verilog netlist file 'F:\PUF\period_cul\netgen\par\roModule_timesim.v' ...
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx SIMPRIM simulation primitives and has to be used with SIMPRIM
+   simulation library for correct compilation and simulation. 
+INFO:NetListWriters - Xilinx recommends running separate simulations to check for setup by specifying the MAX field in the SDF file and for
+   hold by specifying the MIN field in the SDF file. Please refer to Simulator documentation for more details on specifying MIN and MAX
+   field in the SDF.
+INFO:NetListWriters:665 - For more information on how to pass the SDF switches to the simulator, see your Simulator tool documentation.
+Number of warnings: 0
+Number of info messages: 3
+Total memory usage is 632220 kilobytes

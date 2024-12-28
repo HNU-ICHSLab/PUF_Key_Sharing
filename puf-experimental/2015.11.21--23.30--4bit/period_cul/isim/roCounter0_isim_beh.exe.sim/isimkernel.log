@@ -1,0 +1,28 @@
+Command line:
+   roCounter0_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  4112
+
+Thu Nov 19 23:36:01 2015
+
+
+ Elaboration Time: 0.078 sec
+
+ Current Memory Usage: 670.761 Meg
+
+ Total Signals          : 7
+ Total Nets             : 69
+ Total Signal Drivers   : 4
+ Total Blocks           : 4
+ Total Primitive Blocks : 4
+ Total Processes        : 3
+ Total Traceable Variables  : 10
+ Total Scalar Nets and Variables : 447
+
+ Total Simulation Time: 0.1716 sec
+
+ Current Memory Usage: 670.761 Meg
+
+Thu Nov 19 23:36:10 2015
+
